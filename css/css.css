@@ -1,0 +1,16 @@
+#facebook {
+    float: right;
+    position: relative;
+    top: 20em;
+}
+
+#google {
+    float: left;
+    position: relative;
+    top: 20em;
+}
+
+#google_ice {
+    top: 20em;
+    position: relative;
+}
