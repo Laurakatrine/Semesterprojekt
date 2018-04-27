@@ -4,6 +4,8 @@
        font-family: 'Arial', 'serif';
    }
 
+   /* Naviagtionsbar */
+
    .nav {
        background-color: #6F1D18;
        color: #ffffff;
@@ -13,11 +15,15 @@
 
    }
 
+   /* Nav Knapper */
+
    .nav > li {
        display: inline-block;
        padding: 0% 2% 0% 2%;
 
    }
+
+   /* Nav Knapper */
 
    .nav > li > a {
        text-decoration: none;
@@ -35,6 +41,8 @@
 
    }
 
+   /* Gule Knapper */
+
    .active {
        background: linear-gradient(#FFFA64, #F2ED4D);
 
@@ -44,11 +52,52 @@
        height: 10%;
    }
 
+   /* SubMenu */
+
+   .navsub {
+       background-color: #6F1D18;
+       color: #ffffff;
+       list-style: none;
+       text-align: center;
+       padding: 1% 0% 1% 0%;
+       width: 90%;
+   }
+
+   .navsub > li {
+       display: inline-block;
+       padding: 0% 7% 0% 2%;
+
+   }
+
+   .navsub > li > a {
+       text-decoration: none;
+       color: #ffffff;
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+
+
+   }
+
    .submenu {
        background: #FC4237;
 
        border-radius: 20px;
 
-       width: 75%;
+       width: 150%;
        height: 10%;
+   }
+
+   /* Billeder under submenu */
+
+   .row {
+       display: flex;
+       width: 90%;
+
+   }
+
+   .column {
+
+       padding: 5px;
    }
