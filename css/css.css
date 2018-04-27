@@ -13,4 +13,78 @@
 #google_ice {
     top: 20em;
     position: relative;
+<<<<<<< HEAD
 }
+
+.button {
+    color: black;
+    border-radius: 50%;
+    position: relative;
+    width: 5em;
+    height: 5em;
+
+}
+
+.bestilling {
+    position: relative;
+    top: 20em;
+}
+
+.plus {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: right;
+    right: 20em;
+    display: inline-block;
+}
+
+.minus {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: right;
+    right: 40em;
+    display: inline-block;
+}
+
+#title_b {
+    position: relative;
+    bottom: 9em;
+    margin: auto;
+    text-align: center;
+    color: darkred;
+    font-size: 40px;
+}
+
+#myNumber1 {
+    float: right;
+    position: relative;
+    right: 22em;
+    display: inline-block;
+}
+
+#myNumber2 {
+    float: right;
+    position: relative;
+    right: 22em;
+    display: inline-block;
+}
+
+#myNumber3 {
+    float: right;
+    position: relative;
+    right: 22em;
+    display: inline-block;
+}
+
+.foodName {
+    box-sizing: content-box;
+    position: relative;
+    left: 5em;
+    display: inline;
+    font-size: 20px;
+    bottom: 1px;
+=======
+}
+>>>>>>> master
