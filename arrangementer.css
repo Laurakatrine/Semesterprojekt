@@ -1,0 +1,57 @@
+body{
+    background-color:#F2ED4D;
+}
+
+div {
+   
+    font-weight: bold;
+    font-size: 20px; 
+    font-family: sans-serif; 
+
+}
+
+
+
+.tilbud {
+    
+    float: left;
+   
+
+}
+
+.billet{
+    
+  float: right;   
+  width: 35%; 
+}
+
+img{
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 30%; 
+    margin-top: 10%; 
+    float: left; 
+}
+
+.button{
+    background-color:#FFFF;
+    border: none;
+    border-radius: 14px;
+    padding-left: 3%;
+    padding-right: 3%;
+    position:absolute;
+    top: 60%;
+    left: 85%;
+    text-decoration: none;
+    color: #000000;
+
+    background: #e0da69;
+    
+
+}
+  
+.button:hover{
+   background: #ccaf64;
+  text-decoration: none; 
+  
+}
