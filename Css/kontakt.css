@@ -1,0 +1,47 @@
+#fortælling{
+    width: 50%;
+    float: left;
+    font-family: sans-serif;
+}
+
+#fortælling h3 {
+    margin-left: 10%;
+}
+
+#fortælling p {
+    margin-left: 15%
+}
+
+#oplysninger {
+    width: 50%;
+    float: right;
+    font-family: sans-serif;
+}
+
+#oplysninger h3 {
+    margin-left: 10%;
+}
+
+#oplysninger p {
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+#åbningstider{
+    float: right;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+#åbningstider h3 {
+    margin-left: 10%;
+}
+
+#åbningstider p {
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+body {
+    background-color: beige;
+}
