@@ -11,66 +11,121 @@
 
     <title>Sportscaféen Solrød</title>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <script src="js/news.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/slideshow.js"></script>
 </head>
 
 <body onload="init()">
+    <div class="master">
 
-    <ul class="nav">
-        <li><a href="Navigationsbar.html"><b>Menu</b></a></li>
-        <li><a href="webs.prototype/bestilling.html"><b>Bestilling</b></a></li>
-        <li><a href="arrangementer.html"><b>Arrangementer</b></a></li>
-        <li><a href="idr%C3%A6tscenteret.html"><b>Idrætscenter</b></a></li>
-        <li><a href="kontakt.html"><b>Kontakt</b></a></li>
 
-        <li style="float:left"><a class="active" href="master.html"><b>Sportscaféen</b></a></li>
-        <li style="float:left"><a class="active" href="#about"><b>Strandkioskerne</b></a></li>
-    </ul>
-    <img src="img/COOKIES-LYS.jpg" style="width:1500px;height:300px;">
+        <div class="header">
 
-    <center>
-    <ul class="navsub">
-        <li><a class="submenu" href="Menu.html"><b>Mad</b></a></li>
-        <li><a class="submenu" href="Drikkelse.html"><b>Drikkevarer</b></a></li>
-        <li><a class="submenu" href="kage.html"><b>Kage</b></a></li>
-    </ul>
-    </center>
+        </div>
 
-    <center>
-    <div class="row">
-        <div class="column">
-            <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
+        <div>
+
+            <h1 class="overskrift">Sportscaféen</h1>
+
         </div>
-        <div class="column">
-            <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
+
+        <ul class="nav">
+            <li><a href="Menu.html"><b>Menu</b></a></li>
+            <li><a href="webs.prototype/bestilling.html"><b>Bestilling</b></a></li>
+            <li><a href="arrangementer.html"><b>Arrangementer</b></a></li>
+            <li><a href="idr%C3%A6tscenteret.html"><b>Idrætscenter</b></a></li>
+            <li><a href="kontakt.html"><b>Kontakt</b></a></li>
+
+            <li style="float:left"><a class="active" href="Menu.html"><b>Sportscaféen</b></a></li>
+            <li style="float:left"><a class="active" href="#about"><b>Strandkioskerne</b></a></li>
+        </ul>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="crop">
+                    <div class="img1">
+                        <img src="img/sportscaf%C3%A9en1.jpg" style="width:100%">
+                    </div>
+                </div>
+                <div class="text">Velkommen</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="crop">
+                    <div class="img2">
+                        <img src="img/sportscaf%C3%A9en2.jpg" style="width:100%">
+                    </div>
+                </div>
+                <!--<div class="text">Caption Two</div>-->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="crop">
+                    <div class="img3">
+                        <img src="img/badminton.JPG" style="width:100%">
+                    </div>
+                </div>
+                <div class="text">Vi har nu givet foreningstilskud på 120.000,00 kr </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="column">
-          <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
-        </div>
-        <div class="column">
-           <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
-        </div>
+
+
+        <center>
+            <ul class="navsub">
+                <li><a class="submenu" href="Menu.html"><b>Mad</b></a></li>
+                <li><a class="submenu" href="Drikkelse.html"><b>Drikkevarer</b></a></li>
+                <li><a class="submenu" href="kage.html"><b>Kage</b></a></li>
+            </ul>
+        </center>
+
+        <center>
+            <div class="row">
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+            </div>
+
+        </center>
+        <center>
+            <div class="row">
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="img/badminton.JPG" alt="Fjords" style="width:100%">
+                </div>
+            </div>
+
+        </center>
     </div>
-        
-    </center>
-      <center>
-    <div class="row">
-        <div class="column">
-          <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
+    <footer>
+        <div class="footer">
         </div>
-        <div class="column">
-            <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
-        </div>
-        <div class="column">
-         <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
-        </div>
-        <div class="column">
-         <img src="img/IMG_1040.JPG" alt="Fjords" style="width:100%">
-        </div>
-    </div>
-        
-    </center>
-    
+    </footer>
 
 </body>
 
