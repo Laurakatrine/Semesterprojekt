@@ -1,4 +1,4 @@
-/* NEWSBAR SECTION */
+/* NEWSBAR SECTION START */
 
 .tickercontainer {
     /* the outer div with the black border */
@@ -68,7 +68,7 @@ img.logo {
 
 /* NEWSBAR SECTION STOP */
 
-/* TITEL-FOOTER SECTION */
+/* TITEL-FOOTER SECTION START */
 
 #overskrift {
     font-family: 'Rubik', sans-serif;
@@ -108,7 +108,7 @@ img.logo {
 
 /* TITEL-FOOTER SECTION STOP */
 
-/* STYLE SECTION */
+/* STYLE SECTION START*/
 
    body {
        margin: 0;
@@ -216,7 +216,7 @@ img.logo {
 
 /* STYLE SECTION STOP */
 
-/* SLIDESHOW SECTION */
+/* SLIDESHOW SECTION START */
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
 * {
@@ -361,3 +361,51 @@ img.logo {
 }
 
 /* SLIDESHOW SECTION STOP */
+
+/* KONTAKT SECTION START */
+
+#fortælling{
+    width: 50%;
+    float: left;
+    font-family: sans-serif;
+}
+
+#fortælling h3 {
+    margin-left: 10%;
+}
+
+#fortælling p {
+    margin-left: 15%
+}
+
+#oplysninger {
+    width: 50%;
+    float: right;
+    font-family: sans-serif;
+}
+
+#oplysninger h3 {
+    margin-left: 10%;
+}
+
+#oplysninger p {
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+#åbningstider{
+    float: right;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+#åbningstider h3 {
+    margin-left: 10%;
+}
+
+#åbningstider p {
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+/* KONTAKT SECTION STOP */
