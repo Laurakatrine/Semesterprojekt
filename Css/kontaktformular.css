@@ -1,0 +1,50 @@
+
+*{
+      
+  background:    #F2ED4D;
+
+  
+}
+
+
+
+fieldset{
+border: none;
+  
+
+}
+
+
+textarea {
+height: 30%; 
+width: 30%; 
+padding: 2%;
+resize: none;  
+font-family: 'Lucida', sans-serif;
+font-size: 16px;
+background: #F5ECCE ; 
+border: none; 
+
+}
+
+input {
+width: 30%; 
+height: 6%; 
+padding: 2%; 
+font-family: 'Lucida', sans-serif;
+font-size: 16px;
+
+background:  #F5ECCE; 
+border: none; 
+}
+
+
+button {
+    
+font: 14px "Lucida sans"; 
+background: #F5DA81;
+padding: 1% 2%;
+color: #585858;
+
+    
+}
