@@ -1,4 +1,7 @@
-        //http://www.gcmingati.net/wordpress/wp-content/lab/jquery/newsticker/jq-liscroll/scrollanimate.html
+        
+ $(document).ready(function () {
+     
+//http://www.gcmingati.net/wordpress/wp-content/lab/jquery/newsticker/jq-liscroll/scrollanimate.html
         /*jQuery expansion */
         jQuery.fn.liScroll = function(settings) {
             settings = jQuery.extend({
@@ -50,4 +53,6 @@
         $("img.logo").click(function() {
                     href = "#" //find forsiden 
         });
+
+ });
 
