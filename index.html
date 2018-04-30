@@ -1,116 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <meta charset="utf-8">
-        <meta name="description" content="Solrød sportshal med indbygget spisefacilitet">
-        <meta name="author" content="Jan M. Jensen">
-        <meta name="keywords" content="sport, mad, drikkevarer">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Sportscaféen Solrød</title>
-        
 
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-        </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/css.css">
-        
-    </head>
-    
+<head>
 
-    <body>
-        
-        <section>
-        <button class="button" type="button">Skift side</button>
-        </section>
-        
-        <!-- MAIN WRAP -->
-        <div style="display:block">
-            <!-- EMBED WRAP -->
-            <div class="site_bottom">
+    <meta charset="utf-8">
+    <meta name="description" content="Solrød sportshal med indbygget spisefacilitet">
+    <meta name="author" content="Jan M. Jensen">
+    <meta name="keywords" content="sport, mad, drikkevarer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sportscaféen Solrød</title>
 
 
-                <!-- FACEBOOK SDK -->
-                <div id="facebook">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fopteko.testero.7%2Fposts%2F102429023958223&width=500" width="500" height="479" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                </div>
-                <!-- GOOGLE SDK -->
-                <div id="google">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1342.7208861964782!2d12.213626786613167!3d55.52926246539209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f6e0498fef1b%3A0x99b511577e9b8833!2sFritidssamr%C3%A5det+I+Region+Sj%C3%A6lland!5e0!3m2!1sda!2sdk!4v1524766130865" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <!-- GOOGLE SDK ICE -->
-
-                <div id="google_ice">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.810095579908!2d12.2293823160563!3d55.53567701618422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f71ada6b0f87%3A0xc02b83ceeb939c48!2s%C3%98stre+Strandvej+30%2C+2680+Solr%C3%B8d+Strand!5e0!3m2!1sda!2sdk!4v1524766568482" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="bestilling" style="display: none">
-                
-            <p id="title_b">Bestillingsside</p>
-                
-                <p class="foodName">Kylling Sandwich</p>
-                <button onclick="increaseNumber1()" class="plus" type="button">+</button>
-                <button onclick="decreaseNumber1()" class="minus" type="button">-</button>
-                <input type="number" id="myNumber1" min="0">
-                <br/>
-                <br/>
-                <p class="foodName">Pingvin bøffer</p>
-                <button onclick="increaseNumber2()" class="plus" type="button">+</button>
-                <button onclick="decreaseNumber2()" class="minus" type="button">-</button>
-                <input type="number" id="myNumber2" min="0">
-                <br/>
-                <br/>
-                <p class="foodName">Pingvin unger</p>
-                <button onclick="increaseNumber3()" class="plus" type="button">+</button>
-                <button onclick="decreaseNumber3()" class="minus" type="button">-</button>
-                <input type="number" id="myNumber3" min="0">
-                <br/>
-                <br/>
-                
-        </div>
-    
-
-    </body>
-    
-    <script>
-        
-        //BESTILLINGSFUNKTIONER
-        function increaseNumber1() {
-            document.getElementById("myNumber1").stepUp(1);
-        }
-        
-        function decreaseNumber1() {
-            document.getElementById("myNumber1").stepDown(1);
-            
-        }
-        
-        function increaseNumber2() {
-            document.getElementById("myNumber2").stepUp(1);
-        }
-        
-        function decreaseNumber2() {
-            document.getElementById("myNumber2").stepDown(1);
-
-        }
-        
-        function increaseNumber3() {
-            document.getElementById("myNumber3").stepUp(1);
-        }
-        
-        function decreaseNumber3() {
-            document.getElementById("myNumber3").stepDown(1);
-
-        }
-        
-        $(document).ready(function(){
-            $(".button").click(function() {
-                $("div").toggle( "slow" );
-            });
-        });
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+
+</head>
+
+
+<body>
+
+    <section>
+        <button class="button" type="button">Skift side</button>
+    </section>
+
+    <!-- MAIN WRAP -->
+    <div style="display:block">
+        <!-- EMBED WRAP -->
+        <div class="site_bottom">
+
+
+            <!-- FACEBOOK SDK -->
+            <div id="facebook">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fopteko.testero.7%2Fposts%2F102429023958223&width=500" width="500" height="479" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <!-- GOOGLE SDK -->
+            <div id="google">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1342.7208861964782!2d12.213626786613167!3d55.52926246539209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f6e0498fef1b%3A0x99b511577e9b8833!2sFritidssamr%C3%A5det+I+Region+Sj%C3%A6lland!5e0!3m2!1sda!2sdk!4v1524766130865" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <!-- GOOGLE SDK ICE -->
+
+            <div id="google_ice">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.810095579908!2d12.2293823160563!3d55.53567701618422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652f71ada6b0f87%3A0xc02b83ceeb939c48!2s%C3%98stre+Strandvej+30%2C+2680+Solr%C3%B8d+Strand!5e0!3m2!1sda!2sdk!4v1524766568482" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bestilling" style="display: none">
+
+        <p id="title_b">Bestillingsside</p>
+
+        <div id="order_list">
+            <p class="foodName">Pingvin æg</p>
+            <button onclick="increaseNumber1()" class="plus" type="button">+</button>
+            <button onclick="decreaseNumber1()" class="minus" type="button">-</button>
+            <input type="number" id="myNumber1" min="0">
+            <br/>
+            <br/>
+            <p class="foodName">Pingvin bøffer</p>
+            <button onclick="increaseNumber2()" class="plus" type="button">+</button>
+            <button onclick="decreaseNumber2()" class="minus" type="button">-</button>
+            <input type="number" id="myNumber2" min="0">
+            <br/>
+            <br/>
+            <p class="foodName">Pingvin unger</p>
+            <button onclick="increaseNumber3()" class="plus" type="button">+</button>
+            <button onclick="decreaseNumber3()" class="minus" type="button">-</button>
+            <input type="number" id="myNumber3" min="0">
+            <br/>
+            <br/>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script>
+    //BESTILLINGSFUNKTIONER
+    function increaseNumber1() {
+        document.getElementById("myNumber1").stepUp(1);
+    }
+
+    function decreaseNumber1() {
+        document.getElementById("myNumber1").stepDown(1);
+
+    }
+
+    function increaseNumber2() {
+        document.getElementById("myNumber2").stepUp(1);
+    }
+
+    function decreaseNumber2() {
+        document.getElementById("myNumber2").stepDown(1);
+
+    }
+
+    function increaseNumber3() {
+        document.getElementById("myNumber3").stepUp(1);
+    }
+
+    function decreaseNumber3() {
+        document.getElementById("myNumber3").stepDown(1);
+    }
+
+    $(document).ready(function() {
+        $(".button").click(function() {
+            $("div").toggle("slow");
+            $("div #order_list").toggle("slow");
+        });
+    });
+</script>
+
 </html>
