@@ -1,0 +1,25 @@
+.overskrift {
+    font-family: 'Rubik', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    color: #3d3d36;
+}
+
+.footer {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    background-color: #4d0802;
+    color: #fff;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+}
+
+.leftFoot {
+    float: left;
+    padding-left: 10%;
+    padding-right: 50%;
+}
+
+.rightFoot {
+    padding-right: 10%;
+}

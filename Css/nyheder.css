@@ -1,0 +1,25 @@
+#nyheder{
+    width: 50%;
+    border-style: solid;
+    background-color: beige;
+}
+
+#nyheder .nyhed-billed{
+    width: 100%;
+    cursor: pointer;
+}
+
+#nyheder h3 {
+    margin-left: 5%;
+    font-family: sans-serif;
+}
+
+#content {
+    border-top: solid;
+}
+
+#content .nyhed-skrift{
+    font-family: sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
