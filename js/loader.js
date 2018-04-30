@@ -5,4 +5,3 @@
         $("#slideshow").load("slideshow.html");
         $(".content").load("submenu.html");
     });
-
