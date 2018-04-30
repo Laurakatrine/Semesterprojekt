@@ -1,65 +1,11 @@
-<html>
-
-<head>
-
-    <meta charset="utf-8">
-    <link href="css/slideshow.css" rel="stylesheet" />
-
-</head>
-
-<body>
-    <!-- Slideshow container -->
-    <div class="slideshow-container" >
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="crop">
-                <div class="img1">
-                    <img src="img/sportscaf%C3%A9en1.jpg" style="width:100%">
-                </div>
-            </div>
-            <div class="text">Velkommen</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="crop">
-                <div class="img2">
-                    <img src="img/sportscaf%C3%A9en2.jpg" style="width:100%">
-                </div>
-            </div>
-            <!--<div class="text">Caption Two</div>-->
-        </div>
-
-        <div class="mySlides fade">
-            <div class="crop">
-                <div class="img3">
-                    <img src="img/badminton.JPG" style="width:100%">
-                </div>
-            </div>
-            <div class="text">Vi har nu givet foreningstilskud på 120.000,00 kr </div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-    <script>
-        /*
+        $(document).ready(function () {
+            
         var slideIndex = 0;
         showSlides();
         var slides;
         var dots;
         var out = true;
-        
+
 
         function plusSlides(position) {
             slideIndex += position;
@@ -111,16 +57,9 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            
+
             setTimeout(showSlides, 5000); // Change image every 5 seconds
-        
-        } */
-        
-        
-        
 
-    </script>
-
-</body>
-
-</html>
+        }
+        });
+        
