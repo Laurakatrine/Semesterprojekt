@@ -132,7 +132,7 @@ img.logo {
        text-align: center;
        padding: 1% 0% 1% 0%;
        font-family: 'Rubik', sans-serif;
-
+       margin-bottom: 0;
    }
 
    /* Nav Knapper */
