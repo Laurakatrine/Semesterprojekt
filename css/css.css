@@ -1,4 +1,4 @@
-.footer {
+footer {
     position: absolute;
     height: auto;
     top: 27em;
@@ -218,4 +218,8 @@
 .btn:active {
     /*Clicked and held*/
     box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+#order_list {
+    padding: 5em;
 }

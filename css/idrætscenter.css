@@ -1,7 +1,9 @@
 .idrætscenteret{
     font-family: Verdana;
     background-color:beige;
-    
+    padding-left: 15em;
+    width: 100%;
+    margin: auto;
 }
 span {
     font-weight: bold; 

@@ -1,61 +1,51 @@
-
-
 .arrangementer_div {
-   
+
     font-weight: bold;
-    font-size: 20px; 
+    font-size: 20px;
     font-family: sans-serif;
-    margin: auto; 
-    background-color:#F2ED4D;
-    display: inline-block; 
+    margin: auto;
+    background-color: #F2ED4D;
+    display: inline-block;
     width: 100%;
-    
-    
+    padding: 5em 20em 5em 20em;
+    bottom: 10em;
 
 }
 
-
-
-.tilbud {
-    
-    float: left;
-    
-
+#text_container .billet {
+    float:right;
+    right: 10em;
 }
-
-.billet{
-    
-  float: right;   
-  width: 35%; 
+#text_container .tilbud {
+    float:left;
 }
-
-img{
+.arrangement_img {
     border: 1px solid #ddd;
     padding: 5px;
-    width: 30%; 
-    float: left; 
+    width: 30%;
+    float: left;
     margin-top: 10%;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
 }
 
-.button{
-    background-color:#FFFF;
+.button_arrangement {
+    background-color: #FFFF;
     border: none;
     border-radius: 14px;
     padding-left: 3%;
     padding-right: 3%;
-    position:absolute;
-    top: 40%;
-    left: 85%;
+    top: 7em;
+    position: relative;
+    left: 75%;
     text-decoration: none;
     color: #000000;
     background: #e0da69;
-    
+
 
 }
-  
-.button:hover{
-   background: #ccaf64;
-  text-decoration: none; 
-  
+
+.button_arrangement:hover {
+    background: #ccaf64;
+    text-decoration: none;
+
 }
