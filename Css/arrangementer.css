@@ -3,40 +3,47 @@
     font-weight: bold;
     font-size: 20px;
     font-family: sans-serif;
-    margin: auto;
-    background-color: #F2ED4D;
-    display: inline-block;
+    margin: auto; 
+    background-color:beige;
+    display: inline-block; 
     width: 100%;
     padding: 5em 20em 5em 20em;
     bottom: 10em;
 
 }
 
-#text_container .billet {
-    float:right;
-    right: 10em;
-}
-#text_container .tilbud {
-    float:left;
-}
-.arrangement_img {
-    border: 1px solid #ddd;
-    padding: 5px;
-    width: 30%;
+
+
+.column {
     float: left;
-    margin-top: 10%;
-    margin-bottom: 2%;
+    padding: 10px;
+    
 }
 
-.button_arrangement {
-    background-color: #FFFF;
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.button{
+    background-color:#FFFF;
     border: none;
     border-radius: 14px;
     padding-left: 3%;
     padding-right: 3%;
-    top: 7em;
-    position: relative;
-    left: 75%;
+    position:relative;
+    left: 85%;
     text-decoration: none;
     color: #000000;
     background: #e0da69;
