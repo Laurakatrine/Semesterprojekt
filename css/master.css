@@ -1,0 +1,411 @@
+/* NEWSBAR SECTION START */
+
+.tickercontainer {
+    /* the outer div with the black border */
+    background: linear-gradient(#D5382E, #000);
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.tickercontainer .mask {
+    /* that serves as a mask. so you get a sort of padding both left and right */
+    position: relative;
+    left: 100px;
+    top: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*list */
+
+ul.newsticker {
+    position: relative;
+    left: 750px;
+    font-family: Verdana;
+    color: white;
+    font-size: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.newsticker li {
+    float: left;
+    /* important: display inline gives incorrect results when you check for elem's width */
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+ul.newsticker a {
+    white-space: nowrap;
+    padding: 0;
+    color: white;
+    font-family: Verdana;
+    font-size: 30px;
+    margin: 0 50px 0 0;
+    text-decoration: none;
+}
+
+ul.newsticker span {
+    margin: 0 10px 0 0;
+}
+
+/*placement of logo*/
+
+img.logo {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 1px;
+    left: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* NEWSBAR SECTION STOP */
+
+/* TITEL-FOOTER SECTION START */
+
+#overskrift {
+    font-family: 'Rubik', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    color: #3d3d36;
+    background-color: white;    
+}
+
+.overskrift {
+    font-family: 'Rubik', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    color: #3d3d36;
+    background-color: white;
+    z-index: 0;
+}
+
+.footer {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    background-color: #4d0802;
+    color: #fff;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+}
+
+.leftFoot {
+    float: left;
+    padding-left: 10%;
+    padding-right: 50%;
+}
+
+.rightFoot {
+    padding-right: 10%;
+}
+
+/* TITEL-FOOTER SECTION STOP */
+
+/* STYLE SECTION START*/
+
+   body {
+       margin: 0;
+       padding: 0;
+       font-family: 'Arial', 'serif';
+   }
+
+   /* Naviagtionsbar */
+
+   .nav {
+       background-color: #6F1D18;
+       color: #ffffff;
+       list-style: none;
+       text-align: center;
+       padding: 1% 0% 1% 0%;
+
+   }
+
+   /* Nav Knapper */
+
+   .nav > li {
+       display: inline-block;
+       padding: 0% 2% 0% 2%;
+
+   }
+
+   /* Nav Knapper */
+
+   .nav > li > a {
+       text-decoration: none;
+       color: #ffffff;
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+
+
+   }
+
+   .nav > li > a:hover {
+       color: #c1c1c1 !important;
+
+   }
+
+   /* Gule Knapper */
+
+   .active {
+       background: linear-gradient(#FFFA64, #F2ED4D);
+
+       border-radius: 20px;
+       color: black !important;
+       width: 100%;
+       height: 10%;
+   }
+
+   /* SubMenu */
+
+   .navsub {
+       background-color: #6F1D18;
+       color: #ffffff;
+       list-style: none;
+       text-align: center;
+       padding: 1% 0% 1% 0%;
+       width: 66%;
+   }
+
+   .navsub > li {
+       display: inline-block;
+       padding: 0% 7% 0% 2%;
+
+   }
+
+   .navsub > li > a {
+       text-decoration: none;
+       color: #ffffff;
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+
+
+   }
+
+   .submenu {
+       background: #FC4237;
+
+       border-radius: 20px;
+
+       width: 150%;
+       height: 10%;
+   }
+
+   /* Billeder under submenu */
+
+   .row {
+       display: flex;
+       width: 90%;
+
+   }
+
+   .column {
+
+       padding: 5px;
+   }
+
+/* STYLE SECTION STOP */
+
+/* SLIDESHOW SECTION START */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #f2f2f2;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 2px 0px 0px ;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* img crop and position */
+
+.crop {
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+/*top, right, buttom, left*/
+
+.img1 {
+    margin: -100px 0 0 0px;
+}
+
+.img2 {
+    margin: 0px 0 0 0px;
+}
+
+.img3 {
+    margin: -300px 0 0 -100px;
+}
+
+/* SLIDESHOW SECTION STOP */
+
+/* KONTAKT SECTION START */
+
+#fortælling{
+    width: 50%;
+    float: left;
+    font-family: sans-serif;
+}
+
+#fortælling h3 {
+    margin-left: 10%;
+}
+
+#fortælling p {
+    margin-left: 15%
+}
+
+#oplysninger {
+    width: 50%;
+    float: right;
+    font-family: sans-serif;
+}
+
+#oplysninger h3 {
+    margin-left: 10%;
+}
+
+#oplysninger p {
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+#åbningstider{
+    float: right;
+    width: 50%;
+    font-family: sans-serif;
+}
+
+#åbningstider h3 {
+    margin-left: 10%;
+}
+
+#åbningstider p {
+    margin-left: 15%;
+    line-height: 150%;
+}
+
+/* KONTAKT SECTION STOP */
