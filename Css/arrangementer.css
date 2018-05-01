@@ -6,7 +6,7 @@
     font-size: 20px; 
     font-family: sans-serif;
     margin: auto; 
-    background-color:#F2ED4D;
+    background-color:beige;
     display: inline-block; 
     width: 100%;
     
@@ -16,27 +16,27 @@
 
 
 
-.tilbud {
-    
+.column {
     float: left;
+    padding: 10px;
     
-
 }
 
-.billet{
-    
-  float: right;   
-  width: 35%; 
+.left {
+  width: 50%;
 }
 
-img{
-    border: 1px solid #ddd;
-    padding: 5px;
-    width: 30%; 
-    float: left; 
-    margin-top: 10%;
-    margin-bottom: 2%; 
+.right {
+  width: 45%;
 }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .button{
     background-color:#FFFF;
@@ -44,8 +44,7 @@ img{
     border-radius: 14px;
     padding-left: 3%;
     padding-right: 3%;
-    position:absolute;
-    top: 40%;
+    position:relative;
     left: 85%;
     text-decoration: none;
     color: #000000;
