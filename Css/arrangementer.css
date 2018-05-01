@@ -1,12 +1,16 @@
-body{
-    background-color:#F2ED4D;
-}
 
-div {
+
+.arrangementer_div {
    
     font-weight: bold;
     font-size: 20px; 
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    margin: auto; 
+    background-color:#F2ED4D;
+    display: inline-block; 
+    width: 100%;
+    
+    
 
 }
 
@@ -15,7 +19,7 @@ div {
 .tilbud {
     
     float: left;
-   
+    
 
 }
 
@@ -29,8 +33,9 @@ img{
     border: 1px solid #ddd;
     padding: 5px;
     width: 30%; 
-    margin-top: 10%; 
     float: left; 
+    margin-top: 10%;
+    margin-bottom: 2%; 
 }
 
 .button{
@@ -40,11 +45,10 @@ img{
     padding-left: 3%;
     padding-right: 3%;
     position:absolute;
-    top: 60%;
+    top: 40%;
     left: 85%;
     text-decoration: none;
     color: #000000;
-
     background: #e0da69;
     
 
