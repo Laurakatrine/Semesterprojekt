@@ -13,7 +13,6 @@
         $(".content_master").remove();
         $(".submenu_master").load("navbar_simple.html");
         $(".navbar").load("slideshow.html");
-        $(".content_master").load("submenu.html");
     }
 
     function loadMainContact() {
@@ -39,8 +38,7 @@
     function loadSnacks() {
         $(".content_sub > div").remove();
         $(".content_master").remove();
-        $(".content_sub").load("submenu.html");
-        $(".content_sub > #sub_content  ").load("KunKage.html");
+        $(".content_sub").load("KunKage.html");
     }
 
     function loadOrderFood() {
