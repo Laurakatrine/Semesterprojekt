@@ -1,7 +1,12 @@
 <html>
 <head>
 
-<link href="css/idr%C3%A6tscenter.css" rel="stylesheet" />
+<link href="css/master.css" rel="stylesheet" />
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+    
+    
 </head>
 <body>
 
@@ -30,13 +35,40 @@ På Solrød Idrætscenter er også udendørs anlæg med boldbaner og tennisbaner
     <p><span>Mandag-torsdag:</span> 9-21 <span>Fredag-søndag:</span> 10-23</p>
     
     
-    <a target="_blank" href="img/COOKIES-LYS.jpg">
-    <img class = "map" src="img/COOKIES-LYS.jpg">
+   <!-- <a target="_blank" href="img/COOKIES-LYS.jpg">
+    <img class = "map" src="img/COOKIES-LYS.jpg">-->
+        
+<div class="popupMap">
+  <img src="img/COOKIES-LYS.jpg">
+</div>
+<div class="showMap">
+  <div class="overlayMap"></div>
+  <div class="img-showMap">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
         
    </div>
     </div>
     </div>
     </div>
+        
+    <script>
+    $(function () {
+    "use strict";
     
+    $(".popupMap img").click(function () {
+        var $src = $(this).attr("src");
+        $(".showMap").fadeIn();
+        $(".img-showMap img").attr("src", $src);
+    });
+    
+    $("span, .overlay").click(function () {
+        $(".showMap").fadeOut();
+    });
+    
+});
+    </script>
     </body>
 </html>
