@@ -63,6 +63,6 @@
         $(".content_sub > div").remove();
         $(".content_master").remove();
         $("div.content_master > center").remove();
-                $(".navbar").load("slideshow.html");
+        $(".navbar").load("slideshow.html");
         $(".content_sub").load("idrætscenteret.html");
     }
