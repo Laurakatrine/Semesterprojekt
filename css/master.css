@@ -375,10 +375,15 @@ img.logo {
 /* SLIDESHOW SECTION STOP */
 
 /* KONTAKT SECTION START */
+
+/* div around entire contact element */
 .kontakt {
     display: inline-block;
     background-color: beige;
-    width: 100%;
+    /* places entire div in middle */
+    width: 82%; 
+    margin-left: 9%;
+    margin-right: 9%;
     
 }
 
@@ -389,6 +394,7 @@ img.logo {
 }
 
 #fortælling h3 {
+    /* brings text in, so it isnt at edge */
     margin-left: 10%;
 }
 
