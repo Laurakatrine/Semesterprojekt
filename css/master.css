@@ -98,21 +98,27 @@ img.logo {
 
 .footer {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 90%;
     background-color: #4d0802;
     color: #fff;
     padding-bottom: 0.5%;
     padding-top: 0.5%;
 }
 
+.footer a {
+    text-decoration: none;
+}
+
 .leftFoot {
+    width: 50%;
     float: left;
     padding-left: 10%;
-    padding-right: 50%;
 }
 
 .rightFoot {
-    padding-right: 10%;
+    display: inline-block;
+    padding-left: 10%;
+    width: 50%;
 }
 
 /* TITEL-FOOTER SECTION STOP */
@@ -381,10 +387,14 @@ img.logo {
     display: inline-block;
     background-color: beige;
     /* places entire div in middle */
-    width: 82%; 
-    margin-left: 9%;
-    margin-right: 9%;
-    
+    width: 100%; 
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 1%;
+}
+
+.right-contact{
+    display: inline-block;
 }
 
 #fortælling{
@@ -403,8 +413,7 @@ img.logo {
 }
 
 #oplysninger {
-    width: 50%;
-    float: right;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -412,14 +421,13 @@ img.logo {
     margin-left: 10%;
 }
 
-#oplysninger p {
+#oplysninger p  {
     margin-left: 15%;
     line-height: 150%;
 }
 
 #åbningstider{
-    float: right;
-    width: 50%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -736,8 +744,8 @@ img.map:hover {
 
 /* NYHEDER START */
 #nyheder{
-    width: 50%;
-    border-style: solid;
+    width: 75%;
+    /border-style: solid;
     background-color: beige;
 }
 
@@ -752,7 +760,7 @@ img.map:hover {
 }
 
 #content {
-    border-top: solid;
+    /border-top: solid;
 }
 
 #content .nyhed-skrift{
