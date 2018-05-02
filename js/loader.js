@@ -39,7 +39,8 @@
     function loadSnacks() {
         $(".content_sub > div").remove();
         $(".content_master").remove();
-        $(".content_sub").load("KunKage.html");
+        $(".content_sub").load("submenu.html");
+        $(".content_sub > #sub_content  ").load("KunKage.html");
     }
 
     function loadOrderFood() {
@@ -47,7 +48,7 @@
         $(".navbar > div").remove();
         $("div.content_master > center").remove();
         $(".content_master").remove();
-        $(".content_sub").load("webs.prototype/bestilling.html");
+        $(".content_sub").load("bestilling.html");
     }
 
     function loadEvents() {

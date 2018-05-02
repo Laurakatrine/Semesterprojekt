@@ -36,7 +36,8 @@ font-family: 'Roboto', sans-serif;
 ul.newsticker {
     position: relative;
     left: 750px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    ;
     color: white;
     font-size: 30px;
     list-style-type: none;
@@ -91,7 +92,7 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-    background-color: white;    
+    background-color: white;
 }
 
 .overskrift {
@@ -112,6 +113,7 @@ img.logo {
     color: #fff;
     padding-bottom: 0.5%;
     padding-top: 0.5%;
+    margin: 0 auto 0 auto;
 }
 
 .footer a {
@@ -135,119 +137,123 @@ img.logo {
 /* STYLE SECTION START*/
 
 /* Giver den her problemer ???*/
-   /*body {
+
+/*body {
        margin: 0;
        padding: 0;
        font-family: 'Roboto', sans-serif;
    }
 */
 
-   /* Naviagtionsbar */
+/* Naviagtionsbar */
 
-   .nav {
-       background-color: #6F1D18;
-       color: #ffffff;
-       list-style: none;
-       text-align: center;
-       padding: 1% 0% 1% 0%;
-       font-family: 'Rubik', sans-serif;
-       margin-bottom: 0;
-   }
+.nav {
+    background-color: #6F1D18;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+    font-family: 'Rubik', sans-serif;
+    margin: 0 auto 0 auto;
+}
 
-   /* Nav Knapper */
+.navbar {
+    margin: 0 auto 0 auto;
+}
 
-   .nav > li {
-       display: inline-block;
-       padding: 0% 2% 0% 2%;
-      
-   }
+/* Nav Knapper */
 
-   /* Nav Knapper */
+.nav > li {
+    display: inline-block;
+    padding: 0% 2% 0% 2%;
 
-   .nav > li > a {
-       text-decoration: none;
-       color: #ffffff;
-       display: block;
-       color: white;
-       text-align: center;
-       padding: 14px 16px;
+}
 
+/* Nav Knapper */
 
-   }
-
-   .nav > li > a:hover {
-       color: #c1c1c1 !important;
-
-   }
-
-   /* Gule Knapper */
-
-   .active {
-       background: linear-gradient(#FFFA64, #F2ED4D);
-
-       border-radius: 20px;
-       color: black !important;
-       width: 100%;
-       height: 10%;
-   }
-
-   /* SubMenu */
-
-   .navsub {
-       background-color: #6F1D18;
-       color: #ffffff;
-       list-style: none;
-       text-align: center;
-       padding: 1% 0% 1% 0%;
-       width: 66%;
-   }
-
-   .navsub > li {
-       display: inline-block;
-       padding: 0% 7% 0% 2%;
-
-   }
-
-   .navsub > li > a {
-       text-decoration: none;
-       color: #ffffff;
-       display: block;
-       color: white;
-       text-align: center;
-       padding: 14px 16px;
+.nav > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
 
 
-   }
+}
 
-   .submenu {
-       background: #FC4237;
+.nav > li > a:hover {
+    color: #c1c1c1 !important;
 
-       border-radius: 20px;
+}
 
-       width: 150%;
-       height: 10%;
-   }
+/* Gule Knapper */
 
-   /* Billeder under submenu */
+.active {
+    background: linear-gradient(#FFFA64, #F2ED4D);
 
-   .row {
-       display: flex;
-       width: 90%;
+    border-radius: 20px;
+    color: black !important;
+    width: 100%;
+    height: 10%;
+}
 
-   }
+/* SubMenu */
 
-   .column {
+.navsub {
+    background-color: #6F1D18;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+    width: 66%;
+}
 
-       padding: 5px;
-   }
+.navsub > li {
+    display: inline-block;
+    padding: 0% 7% 0% 2%;
+
+}
+
+.navsub > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+
+
+}
+
+.submenu {
+    background: #FC4237;
+
+    border-radius: 20px;
+
+    width: 150%;
+    height: 10%;
+}
+
+/* Billeder under submenu */
+
+.row {
+    display: flex;
+    width: 90%;
+
+}
+
+.column {
+
+    padding: 5px;
+}
 
 /* STYLE SECTION STOP */
 
 /* SLIDESHOW SECTION START */
 
-
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 
@@ -256,8 +262,8 @@ img.logo {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: auto;
-   
+    margin: 0 auto 0 auto;
+
 }
 
 
@@ -307,7 +313,7 @@ img.logo {
 .text {
     font-family: 'Roboto', sans-serif;
     color: #f2f2f2;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     font-size: 30px;
     padding: 8px 12px;
     position: absolute;
@@ -323,12 +329,12 @@ img.logo {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0px 2px 0px 0px ;
+    margin: 0px 2px 0px 0px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    
+
 }
 
 .active,
@@ -393,6 +399,7 @@ img.logo {
 /* KONTAKT SECTION START */
 
 /* div around entire contact element */
+
 .kontakt {
     display: inline-block;
     background-color: beige;
@@ -454,12 +461,12 @@ img.logo {
 
 /* BESTILLING SEKTION START */
 
-
-
 #facebook {
     float: right;
     position: relative;
-    top: 20em;
+    margin: auto;
+    padding: auto;
+    display: inline-grid;
 }
 
 #google {
@@ -472,6 +479,7 @@ img.logo {
     top: 20em;
     position: relative;
 }
+
 /* den her gør intet, der er ingen class button i bestilling
 .button {
     color: black;
@@ -551,6 +559,7 @@ img.logo {
 
 
 /* PROTOTYPE START */
+
 /* Outer */
 
 .popup {
@@ -675,6 +684,8 @@ img.logo {
 
 #order_list {
     padding: 5em;
+    background-color: beige;
+    margin: 0 auto 0 auto
 }
 
 /* BESTILLING SEKTION STOP */
@@ -682,65 +693,73 @@ img.logo {
 /* VIDEO_SPORTS SEKTION START */
 
 .video_container iframe {
-    margin-left: 17em; 
+    margin-left: 17em;
 }
 
 /* VIDEO_SPORTS SEKTION STOP */
 
 /* IDRÆTSCENTERET SEKTION START */
 
-.idrætscenteret{
+.idrætscenteret {
     font-family: Verdana;
-    background-color:beige;
+    background-color: beige;
     padding-left: 15em;
     width: 100%;
     margin: auto;
 }
+
 span {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 /*img*/
-.popupMap{
-    width: 900px;
+
+.popupMap {
+    width: 100%;
     margin: auto;
-    
+
 }
-.popupMap img{
+
+.popupMap img {
     width: 200px;
     height: 200px;
     cursor: pointer
 }
-.showMap{
+
+.showMap {
     z-index: 999;
     display: none;
 }
-.showMap .overlayMap{
+
+.showMap .overlayMap {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.66);
+    background: rgba(0, 0, 0, .66);
     position: absolute;
     top: 0;
     left: 0;
 }
-.showMap .img-showMap{
+
+.showMap .img-showMap {
     width: 600px;
     height: 400px;
     background: #FFF;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     overflow: hidden
 }
-.img-showMap span{
+
+.img-showMap span {
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 99;
     cursor: pointer;
 }
-.img-showMap img{
+
+.img-showMap img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -754,18 +773,19 @@ span {
 .column {
     float: left;
     padding: 10px;
-    
+
 }
 
 .left {
-  width: 50%;
+    width: 50%;
 }
 
 .right {
-  width: 45%;
+    width: 45%;
 }
 
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -773,9 +793,6 @@ span {
 }
 
 #facebook iframe {
-    position: relative;
-    bottom: 20em;
-    right: 1.6em;
 }
 
 #nyheder {
@@ -786,6 +803,7 @@ span {
 
 /* IDRÆTSCENTERET SEKTION STOP */
 
+/* NYHEDER START */
 
 /* NYHEDER START */
 #nyheder{
@@ -794,7 +812,7 @@ span {
     background-color: beige;
 }
 
-#nyheder .nyhed-billed{
+#nyheder .nyhed-billed {
     width: 100%;
     cursor: pointer;
 }
@@ -808,21 +826,25 @@ span {
     /border-top: solid;
 }
 
-#content .nyhed-skrift{
-    font-family: 'Roboto', sans-serif;;
+#content .nyhed-skrift {
+    font-family: 'Roboto', sans-serif;
+    ;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 /* NYHEDER SLUT /*
 /*ARRANGEMENTER */
+
 .arrangementer_div {
 
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;;
-    margin: auto; 
-    background-color:beige;
-    display: inline-block; 
+    font-family: 'Roboto', sans-serif;
+    ;
+    margin: auto;
+    background-color: beige;
+    display: inline-block;
     width: 100%;
     padding: 5em 20em 5em 20em;
     bottom: 10em;
@@ -834,18 +856,19 @@ span {
 .column {
     float: left;
     padding: 10px;
-    
+
 }
 
 .left {
-  width: 50%;
+    width: 50%;
 }
 
 .right {
-  width: 45%;
+    width: 45%;
 }
 
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -853,13 +876,13 @@ span {
 }
 
 
-.button_arrangementer{
-    background-color:#FFFF;
+.button_arrangementer {
+    background-color: #FFFF;
     border: none;
     border-radius: 14px;
     padding-left: 3%;
     padding-right: 3%;
-    position:relative;
+    position: relative;
     left: 85%;
     text-decoration: none;
     color: #000000;
@@ -873,74 +896,82 @@ span {
     text-decoration: none;
 
 }
+
 /* ARRANGEMENTER SLUT */
+
 /* KONTAKTFORMULAR START*/
 
+#contact fieldset {
+    border: none;
 
-#contact fieldset{
-border: none;
-  
 
 }
 
 
 #contact textarea {
-height: 30%; 
-width: 30%; 
-padding: 2%;
-resize: none;  
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
-background: #F5ECCE ; 
-border: none; 
+    height: 30%;
+    width: 30%;
+    padding: 2%;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #F5ECCE;
+    border: none;
 
 }
 
 #contact input {
-width: 30%; 
-height: 6%; 
-padding: 2%; 
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
+    width: 30%;
+    height: 6%;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 
-background:  #F5ECCE; 
-border: none; 
+    background: #F5ECCE;
+    border: none;
 }
 
 
 #contact button {
-    
-font: 14px 'Roboto', sans-serif; 
-background: #F5DA81;
-padding: 1% 2%;
-color: #585858;
 
-    
+    font: 14px 'Roboto', sans-serif;
+    background: #F5DA81;
+    padding: 1% 2%;
+    color: #585858;
+
+
 }
 
 /* KONTAKTFORMULAR SLUT */
+
 /* IDRÆTSCENTER START */
-.idrætscenteret{
+
+.idrætscenteret {
     font-family: 'Roboto', sans-serif;
-    background-color:beige;
-    padding-left: 15em;    
+    background-color: beige;
+    padding-left: 15em;
     width: 100%;
     margin: auto;
-    
+
 }
+
 span {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 /*img*/
-img.map
-{
-    border: 1px solid #ddd; /* Gray border */
-    border-radius: 4px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    width: 300px; /* Set a small width */
-    
+
+img.map {
+    border: 1px solid #ddd;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded border */
+    padding: 5px;
+    /* Some padding */
+    width: 300px;
+    /* Set a small width */
 }
+
 img.map:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
@@ -951,18 +982,19 @@ img.map:hover {
 .column {
     float: left;
     padding: 10px;
-    
+
 }
 
 .left {
-  width: 50%;
+    width: 50%;
 }
 
 .right {
-  width: 45%;
+    width: 45%;
 }
 
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -970,6 +1002,3 @@ img.map:hover {
 }
 
 /* IDRÆTSCENTERET SLUT */
-
-
-
