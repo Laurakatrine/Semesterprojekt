@@ -4,13 +4,27 @@
     width: 82%;
     margin-left: 9%;
     margin-right: 9%;
-    
+    float: left;
+}
+
+.left-contact{
+    width: 49.6%;
+    float: left;
+}
+
+.right-contact{
+    width: 49.6%;
+    float: right;
+    padding-bottom: 5%;
+}
+
+.sportscafekort{
+    padding-left: 5%;
 }
 
 #fortælling{
-    width: 50%;
-    float: left;
     font-family: sans-serif;
+    padding-bottom: 20%;
 }
 
 #fortælling h3 {
@@ -18,35 +32,42 @@
 }
 
 #fortælling p {
-    margin-left: 15%
+    margin-left: 10%
+}
+
+#contactformular{
+}
+
+#contact{
+    width: 80%;
+    height: 80%;
+    margin: auto;
 }
 
 #oplysninger {
     width: 50%;
-    float: right;
     font-family: sans-serif;
 }
 
 #oplysninger h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #oplysninger p {
-    margin-left: 15%;
+    margin-left: 5%;
     line-height: 150%;
 }
 
 #åbningstider{
-    float: right;
     width: 50%;
     font-family: sans-serif;
 }
 
 #åbningstider h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #åbningstider p {
-    margin-left: 15%;
+    margin-left: 5%;
     line-height: 150%;
 }

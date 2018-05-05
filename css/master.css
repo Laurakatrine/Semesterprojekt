@@ -426,7 +426,6 @@ img.logo {
     padding-right: 10%;
     padding-left: 10%;
     margin-bottom: 1%;
-     
 }
 
 .kontakt span {
@@ -434,58 +433,109 @@ img.logo {
     font-style: italic;
 
 }
-
-.right-contact {
-    display: inline-block;
-}
-
-#fortælling {
-    width: 50%;
+.left-contact{
+    width: 49.6%;
     float: left;
-    font-family: 'Roboto', sans-serif;
 }
 
+.right-contact{
+    width: 49.6%;
+    float: right;
+    padding-bottom: 0.5%;
+}
 
+#fortælling{
+    font-family: sans-serif;
+    padding-bottom: 27.59%;
+}
 
 #fortælling h3 {
-    /* brings text in, so it isnt at edge */
     margin-left: 10%;
 }
 
 #fortælling p {
-    margin-left: 15%
+    margin-left: 10%
+}
+
+
+#contact{
+    width: 80%;
+    height: 80%;
+    margin: auto;
 }
 
 #oplysninger {
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    font-family: sans-serif;
 }
 
 #oplysninger h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #oplysninger p {
-    margin-left: 15%;
+    margin-left: 5%;
     line-height: 150%;
 }
 
-
-#åbningstider {
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+#åbningstider{
+    width: 50%;
+    font-family: sans-serif;
 }
 
 #åbningstider h3 {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #åbningstider p {
-    margin-left: 15%;
+    margin-left: 5%;
     line-height: 150%;
 }
 
+/* KONTAKTFORMULAR START*/
 
+#contact fieldset {
+    border: none;
+
+
+}
+
+
+#contact textarea {
+    height: 30%;
+    width: 100%;
+    padding: 2%;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #F5ECCE;
+    border: none;
+
+}
+
+#contact input {
+    width: 100%;
+    height: 6%;
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    background: #F5ECCE;
+    border: none;
+}
+
+
+#contact button {
+
+    font: 14px 'Roboto', sans-serif;
+    background: #F5DA81;
+    padding: 1% 2%;
+    color: #585858;
+
+
+}
+
+/* KONTAKTFORMULAR SLUT */
 
 /* KONTAKT SECTION STOP */
 
@@ -499,11 +549,13 @@ img.logo {
     display: inline-grid;
 }
 
-#google {
+
+/*hvis det her kører, bliver mappet vist udenfor kontekst*/
+/*#google {
     float: left;
     position: relative;
     top: 20em;
-}
+}*/
 
 #google_ice {
     top: 20em;
@@ -926,50 +978,7 @@ span {
 
 /* ARRANGEMENTER SLUT */
 
-/* KONTAKTFORMULAR START*/
 
-#contact fieldset {
-    border: none;
-
-
-}
-
-
-#contact textarea {
-    height: 30%;
-    width: 30%;
-    padding: 2%;
-    resize: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background: #F5ECCE;
-    border: none;
-
-}
-
-#contact input {
-    width: 30%;
-    height: 6%;
-    padding: 2%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-
-    background: #F5ECCE;
-    border: none;
-}
-
-
-#contact button {
-
-    font: 14px 'Roboto', sans-serif;
-    background: #F5DA81;
-    padding: 1% 2%;
-    color: #585858;
-
-
-}
-
-/* KONTAKTFORMULAR SLUT */
 
 /* IDRÆTSCENTER START */
 
