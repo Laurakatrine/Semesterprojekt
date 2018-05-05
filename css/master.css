@@ -416,12 +416,19 @@ img.logo {
 
 .kontakt {
     display: inline-block;
-    background-color: beige;
+    
     /* places entire div in middle */
     width: 100%;
     padding-right: 10%;
     padding-left: 10%;
     margin-bottom: 1%;
+     
+}
+
+.kontakt span {
+    font-weight: normal;
+    font-style: italic;
+
 }
 
 .right-contact {
@@ -433,6 +440,8 @@ img.logo {
     float: left;
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 #fortælling h3 {
     /* brings text in, so it isnt at edge */
@@ -457,6 +466,7 @@ img.logo {
     line-height: 150%;
 }
 
+
 #åbningstider {
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -470,6 +480,8 @@ img.logo {
     margin-left: 15%;
     line-height: 150%;
 }
+
+
 
 /* KONTAKT SECTION STOP */
 
@@ -508,7 +520,6 @@ img.logo {
 .bestilling {
     position: relative;
     top: 20em;
-    background-color: beige;
     width: 100%;
 }
 
@@ -698,7 +709,6 @@ img.logo {
 
 #order_list {
     padding: 5em;
-    background-color: beige;
     margin: 0 auto 0 auto
 }
 
@@ -716,7 +726,6 @@ img.logo {
 
 .idrætscenteret {
     font-family: Verdana;
-    background-color: beige;
     padding-left: 15em;
     width: 100%;
     margin: auto;
@@ -810,6 +819,7 @@ span {
 
 #nyheder {
     position: relative;
+    top: -25px;
     width: 100;
     margin-left: 15.6em;
 }
@@ -823,7 +833,7 @@ span {
 #nyheder {
     width: 75%;
     /border-style: solid;
-    background-color: beige;
+    
 }
 
 #nyheder .nyhed-billed {
@@ -857,7 +867,6 @@ span {
     font-family: 'Roboto', sans-serif;
     ;
     margin: auto;
-    background-color: beige;
     display: inline-block;
     width: 100%;
     padding: 5em 20em 5em 20em;
@@ -962,14 +971,13 @@ span {
 
 .idrætscenteret {
     font-family: 'Roboto', sans-serif;
-    background-color: beige;
     padding-left: 15em;
     width: 100%;
     margin: auto;
 
 }
 
-span {
+.idrætscenteret span {
     font-weight: bold;
 }
 
