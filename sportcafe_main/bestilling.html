@@ -16,19 +16,19 @@
             <p class="foodName" id="foodName1" value="Pingvin æg">Pingvin æg</p>
             <button onclick="increaseNumber1()" class="plus" type="button">+</button>
             <button onclick="decreaseNumber1()" class="minus" type="button">-</button>
-            <input type="number" id="myNumber1" min="0">
+            <input type="number" id="myNumber1" value="0" min="0">
             <br/>
             <br/>
             <p class="foodName">Pingvin bøffer</p>
             <button onclick="increaseNumber2()" class="plus" type="button">+</button>
             <button onclick="decreaseNumber2()" class="minus" type="button">-</button>
-            <input type="number" id="myNumber2" min="0">
+            <input type="number" id="myNumber2" value="0" min="0">
             <br/>
             <br/>
             <p class="foodName">Pingvin unger</p>
             <button onclick="increaseNumber3()" class="plus" type="button">+</button>
             <button onclick="decreaseNumber3()" class="minus" type="button">-</button>
-            <input type="number" id="myNumber3" min="0">
+            <input type="number" id="myNumber3" value="0" min="0">
             <br/>
             <br/>
 
@@ -102,13 +102,20 @@
 
 
     function orderItems() {
-        var first = document.getElementById("myNumber1");
-        var second = document.getElementById("myNumber2");
+        var first = document.getElementById("myNumber1").value;
+        console.log(typeof(first));
+        var intX = parseInt(first);
+        var second = document.getElementById("myNumber2").value;
         var z = document.getElementById("foodName1").getAttribute("value");
         var currentVal = first.value;
 
+        
+        if (intX == 0) {
+            document.getElementById("confirm").innerHTML = "Ingen varer i kurven";
+        } else {
+        document.getElementById("confirm").innerHTML = "Du har lagt " + first + " " + z + " i kurven";
+        }
 
-        document.getElementById("confirm").innerHTML = "Du har lagt " + currentVal + " " + z + " i kurven";
 
     }
 </script>

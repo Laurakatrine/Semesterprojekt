@@ -6,6 +6,11 @@
         $(".submenu_master").load("navbar_simple.html");
         $(".navbar").load("slideshow.html");
         $(".content_master").load("frontPage_content.html");
+        
+        if (pageLoaded == "Strandkioskerne")
+            {
+                $(".header").remove();
+            }
     });
 
     function loadMainMenu() {
