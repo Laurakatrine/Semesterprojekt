@@ -6,7 +6,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgba(245, 245, 220, 0.5);
-}
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+    }
 
 #dots {
     position: relative;
