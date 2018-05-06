@@ -5,57 +5,113 @@
     <meta charset="utf-8">
 
     <title>Bestilling prototype</title>
-    <script src="../lib/easeljs-0.7.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        /* Taget fra W3Schools (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form) */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            margin: 1em auto 0 auto;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
 
 </head>
 
 <body>
 
-        <div id="order_list">
-            <p class="foodName" id="foodName1" value="Pingvin æg">Pingvin æg</p>
-            <button onclick="increaseNumber1()" class="plus" type="button">+</button>
-            <button onclick="decreaseNumber1()" class="minus" type="button">-</button>
-            <input type="number" id="myNumber1" min="0">
-            <br/>
-            <br/>
-            <p class="foodName">Pingvin bøffer</p>
-            <button onclick="increaseNumber2()" class="plus" type="button">+</button>
-            <button onclick="decreaseNumber2()" class="minus" type="button">-</button>
-            <input type="number" id="myNumber2" min="0">
-            <br/>
-            <br/>
-            <p class="foodName">Pingvin unger</p>
-            <button onclick="increaseNumber3()" class="plus" type="button">+</button>
-            <button onclick="decreaseNumber3()" class="minus" type="button">-</button>
-            <input type="number" id="myNumber3" min="0">
-            <br/>
-            <br/>
+    <div id="order_list">
+        <p class="foodName" id="foodName1" value="Pingvin æg">Pingvin æg</p>
+        <button onclick="increaseNumber1()" class="plus" type="button">+</button>
+        <button onclick="decreaseNumber1()" class="minus" type="button">-</button>
+        <input type="number" id="myNumber1" value="0" min="0">
+        <br/>
+        <br/>
+        <p class="foodName">Pingvin bøffer</p>
+        <button onclick="increaseNumber2()" class="plus" type="button">+</button>
+        <button onclick="decreaseNumber2()" class="minus" type="button">-</button>
+        <input type="number" id="myNumber2" value="0" min="0">
+        <br/>
+        <br/>
+        <p class="foodName">Pingvin unger</p>
+        <button onclick="increaseNumber3()" class="plus" type="button">+</button>
+        <button onclick="decreaseNumber3()" class="minus" type="button">-</button>
+        <input type="number" id="myNumber3" value="0" min="0">
+        <br/>
+        <br/>
 
-            <div id="holder">
-                <div class="btn" onclick="orderItems()" data-popup-open="popup-1" href="#">
-                    <p class="btnText">LÆG I KURV</p>
-                    <div class="btnTwo">
-                        <p class="btnText2">JA TAK!</p>
-                    </div>
+        <div id="holder">
+            <div class="btn" onclick="orderItems()" data-popup-open="popup-1" href="#">
+                <p class="btnText">LÆG I KURV</p>
+                <div class="btnTwo">
+                    <p class="btnText2">JA TAK!</p>
                 </div>
             </div>
-
         </div>
 
-        <div class="order_footer">
-            <footer>
+        <div class="container">
+            <form action="mailto:optek17@gmail.com" method="post" enctype="text/plain">
+                <label for="basket">Bestillingsoversigt</label>
+                <textarea readonly type="text" id="basket" name="købs_Kurv" placeholder="Din bestillingsoversigt"></textarea>
 
-                <div class="popup" data-popup="popup-1">
-                    <div class="popup-inner">
-                        <h2>Oversigt</h2>
-                        <p id="confirm">.</p>
-                        <p><a data-popup-close="popup-1" href="#">Close</a></p>
-                        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-                    </div>
+                <label for="fnavn">Navn</label>
+                <input type="text" id="fnavn" name="fulde_Navn" placeholder="Dit navn..">
+
+                <label for="lname">Telefonnummer</label>
+                <input type="text" id="mobil" name="mobil_Nummer" placeholder="Dit telefonnummer..">
+
+                <label for="subject">Kommentarfelt</label>
+                <textarea id="subject" name="kommentar" placeholder="Skriv f.eks. hvis du har tilføjelser til din ordre, eller ønsker at give besked til personalet om noget andet.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="order_footer">
+        <footer>
+
+            <div class="popup" data-popup="popup-1">
+                <div class="popup-inner">
+                    <h2>Oversigt</h2>
+                    <p id="confirm">.</p>
+                    <p><a data-popup-close="popup-1" href="#">Luk</a></p>
+                    <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 <script>
@@ -102,15 +158,58 @@
 
 
     function orderItems() {
-        var first = document.getElementById("myNumber1");
-        var second = document.getElementById("myNumber2");
+        var first = document.getElementById("myNumber1").value;
+        var intX = parseInt(first);
+        var second = document.getElementById("myNumber2").value;
         var z = document.getElementById("foodName1").getAttribute("value");
         var currentVal = first.value;
+        var basket = [];
+        basket.push(first);
+        basket.push(z);
 
 
-        document.getElementById("confirm").innerHTML = "Du har lagt " + currentVal + " " + z + " i kurven";
+        if (intX == 0) {
+            document.getElementById("confirm").innerHTML = "Ingen varer i kurven";
+        } else {
+            document.getElementById("confirm").innerHTML = "Du har lagt " + first + " " + z + " i kurven";
+            document.getElementById("basket").innerHTML = basket;
+        }
 
+        storageItems();
     }
+
+    function storageItems() {
+        var item = $('#basket').val();
+        var items = sessionStorage.getItem('myOrder');
+
+        if (items != null) {
+            items = JSON.parse(items);
+        } else {
+            items = new Array();
+        }
+
+        items.push(item);
+
+        sessionStorage.setItem('myOrder', JSON.stringify(items));
+
+        refresh();
+    }
+
+    function refresh() {
+        var items = sessionStorage.getItem('myOrder');
+
+        if (items != null) {
+            items = JSON.parse(items);
+
+            $(items).each(function(index, data) {
+                document.getElementById('basket').innerHTML = data;
+            });
+        }
+    }
+
+    $(function() {
+        refresh();
+    });
 </script>
 
 </html>
