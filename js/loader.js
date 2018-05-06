@@ -1,6 +1,6 @@
     var pageLoaded = $(document).attr("title");
     var seasonOpen = true; // Sæson åbent = true || sæson lukket = false
-    var localOpen = true;   // Butik åbent = true || butik lukket = false
+    var localOpen = true; // Butik åbent = true || butik lukket = false
 
     $(document).ready(function () {
         $(".header").load("news.html");
@@ -24,7 +24,7 @@
         $(".content_master").remove();
         $(".submenu_master").load("navbar_simple.html");
         $(".navbar").load("slideshow.html");
-        $(".content_sub").load("nysubmenu.html");
+        $(".content_sub").load("submenu.html");
     }
 
     function loadMainContact() {
@@ -40,6 +40,12 @@
         $(".content_sub > div").remove();
         $(".content_master").remove();
         $(".content_sub").load("Mad.html");
+
+        if (pageLoaded == "Strandkioskerne") {
+            $(".content_sub > div").remove();
+            $(".content_master").remove();
+            $(".content_sub").load("KageTilStrandkioskerne.html");
+        }
     }
 
     function loadDrinks() {
