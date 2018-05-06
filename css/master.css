@@ -919,16 +919,13 @@ span {
 .arrangementer_div {
 
     font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
     background-color: beige;
-=======
-    ;
     margin: auto;
     display: inline-block;
->>>>>>> 5d4e3704f4f2b1dfd7cf0817f659a441fe849625
     width: 100%;
+    padding: 5%; 
     margin: auto; 
-    line-height: normal;
+   
 
 }
 
@@ -937,12 +934,12 @@ span {
     
     font-weight: bold;
     font-size: 20px;  
-    line-height: normal;
+    
     
 }
 
 .column {
-    padding: 10px;
+    padding: 1%; ;
 
 }
 
