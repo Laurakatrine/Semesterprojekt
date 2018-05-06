@@ -5,10 +5,10 @@
     font-family: sans-serif;
     margin: auto; 
     background-color:beige;
-    display: inline-block; 
     width: 100%;
     padding: 5em 20em 5em 20em;
     bottom: 10em;
+    display: inline-block; 
 
 }
 
@@ -16,7 +16,7 @@
 
 .column {
     float: left;
-    padding: 10px;
+    padding: 1%;
     
 }
 
@@ -28,6 +28,9 @@
   width: 45%;
 }
 
+
+
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -36,7 +39,8 @@
 }
 
 
-.button{
+
+.button_arrangementer{
     background-color:#FFFF;
     border: none;
     border-radius: 14px;
@@ -44,6 +48,7 @@
     padding-right: 3%;
     position:relative;
     left: 85%;
+    width: 5%;
     text-decoration: none;
     color: #000000;
     background: #e0da69;
@@ -51,7 +56,7 @@
 
 }
 
-.button_arrangement:hover {
+.button_arrangementer:hover {
     background: #ccaf64;
     text-decoration: none;
 
