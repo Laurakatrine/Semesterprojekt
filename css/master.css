@@ -9,7 +9,7 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px
+    margin-left: 0px;
     }
 
 #dots {
@@ -280,7 +280,7 @@ img.logo {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 1% auto 0 auto;
 
 }
 
@@ -774,7 +774,7 @@ img.logo {
 /* VIDEO_SPORTS SEKTION START */
 
 .video_container iframe {
-    margin: 0 0 0 10%;
+    margin: 1% 0 0 0 
 }
 
 /* VIDEO_SPORTS SEKTION STOP */
@@ -939,12 +939,14 @@ span {
 }
 
 .column left_Arrangementer,right_Arrangementer  {
-    padding: 1%; ;
+    padding: 1%;
 
 }
 
 .left_Arrangementer {
+    position: relative;
   width: 50%;
+  margin: auto auto auto 7%;
 }
 
 .right_Arrangementer {
@@ -1097,4 +1099,10 @@ img.map:hover {
     width: 100%;
     height: 10%;
     opacity: 0.5;
+}
+
+/* CANVAS SEKTION START */
+
+#canvas {
+    margin: 1% auto 0 auto;
 }
