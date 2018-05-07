@@ -938,7 +938,7 @@ span {
     
 }
 
-.column {
+.column left_Arrangementer,right_Arrangementer  {
     padding: 1%; ;
 
 }
