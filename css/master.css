@@ -856,11 +856,11 @@ span {
 
 }
 
-.left_Arrangementer {
+.left {
     width: 50%;
 }
 
-.right_Arrangementer {
+.right {
     width: 45%;
 }
 
@@ -943,11 +943,11 @@ span {
 
 }
 
-.left {
+.left_Arrangementer {
   width: 50%;
 }
 
-.right {
+.right_Arrangementer {
   width: 45%;
 margin-left: 30%; 
   
