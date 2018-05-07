@@ -911,49 +911,40 @@ span {
     ;
     margin-left: 5%;
     margin-right: 5%;
-}   
+}
 
 /* NYHEDER SLUT /*
 /*ARRANGEMENTER */
 
 .arrangementer_div {
 
+    font-weight: bold;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
-    background-color: beige;
+    ;
     margin: auto;
     display: inline-block;
     width: 100%;
-    padding: 5%; 
-    margin: auto; 
-   
+    padding: 5em 20em 5em 20em;
+    bottom: 10em;
 
 }
 
 
-.arrangementer_div h2{
-    
-    font-weight: bold;
-    font-size: 20px;  
-    
-    
-}
 
 .column {
-    padding: 1%; ;
+    float: left;
+    padding: 10px;
 
 }
 
 .left {
-  width: 50%;
+    width: 50%;
 }
 
 .right {
-  width: 45%;
-margin-left: 30%; 
-  
+    width: 45%;
 }
-
-
 
 /* Clear floats after the columns */
 
@@ -965,21 +956,21 @@ margin-left: 30%;
 
 
 .button_arrangementer {
-    background: #FFFF;
+    background-color: #FFFF;
     border: none;
     border-radius: 14px;
-    padding: 5px 30px 5px 30px;
-    top: 4.5em;
-    left: 80%;
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    left: 85%;
     text-decoration: none;
     color: #000000;
     background: #e0da69;
-    margin-left: 50%; 
 
 
 }
 
-.button_arrangementer:hover {
+.button_arrangement:hover {
     background: #ccaf64;
     text-decoration: none;
 
