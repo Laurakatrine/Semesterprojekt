@@ -172,6 +172,13 @@ img.logo {
     margin: 0 auto 0 auto;
     
 }
+.streg {
+   float: left;
+    position: relative;
+    padding-top: 4.5px;
+    opacity: 0.4;
+}
+
 
 .navbar, .content_master {
     background-color: rgba(245, 245, 220, 0.5);
