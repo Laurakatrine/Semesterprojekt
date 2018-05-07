@@ -8,9 +8,9 @@ function init() {
     });
 
     //Shop is **** funtions
-    Opened();
+    //Opened();
     //ClosedRain();
-    //ClosedBecause();
+    ClosedBecause();
     //ClosedForSeason();
 }
 

@@ -11,11 +11,11 @@
 
         if (pageLoaded == "Strandkioskerne" && seasonOpen == true && localOpen == true) {
             $(".header").remove();
+            $(".navbar").load("AnimV1.html");
         } else if (pageLoaded == "Strandkioskerne" && seasonOpen == true && localOpen == false) {
             // Sæson åbent, men lokal lukket
         } else if (pageLoaded == "Strandkioskerne" && seasonOpen == false && localOpen == false) {
             // Sæson lukket, og lokal lukkets
-            $("div").load("AnimV1.html");
         }
     });
 
