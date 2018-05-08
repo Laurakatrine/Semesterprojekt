@@ -405,7 +405,7 @@ img.logo {
 }
 
 .img2 {
-    margin: 0px 0 0 0px;
+    margin: -40px 0 0 0px;
 }
 
 .img3 {
@@ -423,8 +423,8 @@ img.logo {
     
     /* places entire div in middle */
     width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
     margin-bottom: 1%;
 }
 
@@ -465,22 +465,17 @@ img.logo {
 }
 
 #oplysninger {
-    width: 50%;
-    font-family: sans-serif;
-}
-
-#oplysninger h3 {
-    margin-left: 5%;
+    padding-left: 2%;
+    font-family: 'Roboto', sans-serif;
 }
 
 #oplysninger p {
-    margin-left: 5%;
     line-height: 150%;
 }
 
 #åbningstider{
-    width: 50%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
 }
 
 #åbningstider h3 {
@@ -783,7 +778,7 @@ img.logo {
 
 .idrætscenteret {
     font-family: Verdana;
-    padding-left: 15em;
+    padding-left: 17.5%;
     width: 100%;
     margin: auto;
 }
@@ -852,8 +847,6 @@ span {
 
 .column {
     float: left;
-    padding: 10px;
-
 }
 
 .left {
@@ -862,6 +855,7 @@ span {
 
 .right {
     width: 45%;
+    float: right;
 }
 
 /* Clear floats after the columns */
@@ -987,65 +981,6 @@ margin-left: 30%;
 
 /* ARRANGEMENTER SLUT */
 
-
-
-/* IDRÆTSCENTER START */
-
-.idrætscenteret {
-    font-family: 'Roboto', sans-serif;
-    padding-left: 15em;
-    width: 100%;
-    margin: auto;
-
-}
-
-.idrætscenteret span {
-    font-weight: bold;
-}
-
-/*img*/
-
-img.map {
-    border: 1px solid #ddd;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded border */
-    padding: 5px;
-    /* Some padding */
-    width: 300px;
-    /* Set a small width */
-}
-
-img.map:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
-
-/*two column*/
-
-.column {
-    float: left;
-    padding: 10px;
-
-}
-
-.left {
-    width: 50%;
-}
-
-.right {
-    width: 45%;
-}
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* IDRÆTSCENTERET SLUT */
 
 /* NAVBAR START */
 
