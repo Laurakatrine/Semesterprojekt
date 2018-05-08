@@ -44,6 +44,7 @@
             background-color: #f2f2f2;
             padding: 20px;
         }
+
     </style>
 
 </head>
@@ -80,7 +81,7 @@
         </div>
 
         <div class="container">
-            <form action="mailto:optek17@gmail.com" method="post" enctype="text/plain">
+            <form action="../php/mailFunction.php" method="post">
                 <label for="basket">Bestillingsoversigt</label>
                 <textarea readonly type="text" id="basket" name="købs_Kurv" placeholder="Din bestillingsoversigt"></textarea>
 
@@ -158,21 +159,50 @@
 
 
     function orderItems() {
+        
+        //Første madvarer
         var first = document.getElementById("myNumber1").value;
-        var intX = parseInt(first);
-        var second = document.getElementById("myNumber2").value;
         var z = document.getElementById("foodName1").getAttribute("value");
-        var currentVal = first.value;
-        var basket = [];
-        basket.push(first);
-        basket.push(z);
-
-
+        var firstItem = [first, z];
+        var intX = parseInt(first);
         if (intX == 0) {
-            document.getElementById("confirm").innerHTML = "Ingen varer i kurven";
+            firstItem = [];
+        }
+        var firstCon = firstItem.join('x ')
+        
+        //Anden madvarer
+        var second = document.getElementById("myNumber2").value;
+        var x = document.getElementById("foodName2").getAttribute("value");
+        var secondItem = [second, x];
+        var intZ = parseInt(second);
+        if (intZ == 0) {
+            secondItem = [];
+        }
+        var secondCon = secondItem.join('x ')
+        
+        //Tredje madvarer
+        var third = document.getElementById("myNumber3").value;
+        var y = document.getElementById("foodName3").getAttribute("value");
+        var thirdItem = [third, y];
+        var intY = parseInt(third);
+        if (intY == 0) {
+            thirdItem = [];
+        }
+        var thirdCon = thirdItem.join('x ')
+        
+        //Evaluate basket size
+        
+        //var currentVal = first.value;
+        var basket = [];
+        basket.push(firstCon, "\n", secondCon, "\n", thirdCon);
+        var basketOrder = basket.join('');
+
+
+        if (intX == 0 && intZ == 0 && intY == 0) {
+            document.getElementById("confirm").innerHTML = "Du har ikke lagt nogle vare i kurven";
         } else {
-            document.getElementById("confirm").innerHTML = "Du har lagt " + first + " " + z + " i kurven";
-            document.getElementById("basket").innerHTML = basket;
+            document.getElementById("confirm").innerHTML = "Du har lagt " + basketOrder + " i kurven";
+            document.getElementById('basket').innerHTML = basketOrder;
         }
 
         storageItems();
@@ -202,6 +232,7 @@
             items = JSON.parse(items);
 
             $(items).each(function(index, data) {
+                
                 document.getElementById('basket').innerHTML = data;
             });
         }
@@ -210,6 +241,7 @@
     $(function() {
         refresh();
     });
+
 </script>
 
 </html>
