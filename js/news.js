@@ -1,5 +1,8 @@
 //Indsæt nyheder her.
-$("#newswrap > #newsbar").append('<li> <span> •  DATO HER: </span><a target="_blank" href=" LINK HER "> TITEL HER</a> </li>');
+//$("#newswrap > #newsbar").append('<li> <span> •  DATO HER: </span><a target="_blank" href=" LINK HER "> TITEL HER</a> </li>');
+$("#newswrap > #newsbar").append('<li> <span> •  09/07/18 </span><a target="_blank" href=" http://www.lokalbilletten.dk "> Badmintonstævne</a> </li>');
+$("#newswrap > #newsbar").append('<li> <span> •  13/07/18 </span><a target="_blank" href=" http://www.lokalbilletten.dk "> Svømmestævne</a> </li>');
+$("#newswrap > #newsbar").append('<li> <span> •  28/07/18 </span><a target="_blank" href=" http://www.lokalbilletten.dk "> Gymnastik opvisning </a> </li>');
 
 
 //http://www.gcmingati.net/wordpress/wp-content/lab/jquery/newsticker/jq-liscroll/scrollanimate.html
