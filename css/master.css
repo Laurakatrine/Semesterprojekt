@@ -482,15 +482,12 @@ img.logo {
 
 #åbningstider{
     font-family: 'Roboto', sans-serif;
-    text-align: right;
 }
 
 #åbningstider h3 {
-    margin-left: 5%;
 }
 
 #åbningstider p {
-    margin-left: 5%;
     line-height: 150%;
 }
 
