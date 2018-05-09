@@ -4,22 +4,25 @@
 
     <meta charset="utf-8">
     <!-- <link href="../css/slideshow.css" rel="stylesheet" /> -->
-    
+
     <script>
         var pageLoaded = $(document).attr("title");
-    </script>
 
+        if (pageLoaded == "Menu") {
+            $(".img1").append('<img src="../img/IMG_2104.jpg" style="width:100%">');
+        }
+    </script>
 </head>
 
 <body>
     <!-- Slideshow container -->
-    <div class="slideshow-container" >
+    <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="crop">
                 <div class="img1">
-                    <img src="../img/sc1.jpg" style="width:100%">
+
                 </div>
             </div>
             <div class="text">Velkommen</div>
@@ -40,7 +43,7 @@
                     <img src="../img/badminton.JPG" style="width:100%">
                 </div>
             </div>
-            <div class="text">Vi har nu givet foreningstilskud på 120.000,00 kr 
+            <div class="text">Vi har nu givet foreningstilskud på 120.000,00 kr
             </div>
         </div>
 
@@ -58,13 +61,12 @@
     </div>
 
     <script>
-
         var slideIndex = 0;
         showSlides();
         var slides;
         var dots;
         var out = true;
-        
+
 
         function plusSlides(position) {
             slideIndex += position;
@@ -116,16 +118,10 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            
+
             setTimeout(showSlides, 5000); // Change image every 5 seconds
 
         }
-        
-
-    
-        
-        
-
     </script>
 </body>
 
