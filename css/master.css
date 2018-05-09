@@ -103,7 +103,7 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .overskrift {
@@ -181,7 +181,7 @@ img.logo {
 
 
 .navbar, .content_master {
-    background-color: rgba(245, 245, 220, 0.5);
+    /*background-color: rgba(245, 245, 220, 0.5);*/
 }
 
 /* Nav Knapper */
