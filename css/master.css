@@ -1113,3 +1113,7 @@ img.map:hover {
 #canvas {
     margin: 1% auto 0 auto;
 }
+
+.container {
+    opacity: 0.9;
+}
