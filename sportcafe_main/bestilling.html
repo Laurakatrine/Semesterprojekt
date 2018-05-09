@@ -44,7 +44,6 @@
             background-color: #f2f2f2;
             padding: 20px;
         }
-
     </style>
 
 </head>
@@ -81,17 +80,18 @@
         </div>
 
         <div class="container">
-            <form action="../php/mailFunction.php" method="post">
+            <form name="orderForm" onsubmit="return validateForm()" method="post">
                 <label for="basket">Bestillingsoversigt</label>
                 <textarea readonly type="text" id="basket" name="købs_Kurv" placeholder="Din bestillingsoversigt"></textarea>
-
                 <label for="fnavn">Navn</label>
                 <input type="text" id="fnavn" name="fulde_Navn" placeholder="Dit navn..">
 
                 <label for="mobil_Number">Telefonnummer</label>
-                <input type="number" id="mobil_Number" name="mobil_Nummer" placeholder="Dit telefonnummer..">
+                <br>
+                <input type="number" id="mobil_Number" name="mobil_Nummer" min="0" max="99999999" placeholder="Dit telefonnummer..">
 
-                <label for="subject">Kommentarfelt</label>
+
+                <label for="subject">                    <br>Kommentarfelt</label>
                 <textarea id="subject" name="kommentar" placeholder="Skriv f.eks. hvis du har tilføjelser til din ordre, eller ønsker at give besked til personalet om noget andet.." style="height:200px"></textarea>
 
                 <input type="submit" value="Bestil">
@@ -159,7 +159,7 @@
 
 
     function orderItems() {
-        
+
         //Første madvarer
         var first = document.getElementById("myNumber1").value;
         var z = document.getElementById("foodName1").getAttribute("value");
@@ -169,7 +169,7 @@
             firstItem = [];
         }
         var firstCon = firstItem.join('x ')
-        
+
         //Anden madvarer
         var second = document.getElementById("myNumber2").value;
         var x = document.getElementById("foodName2").getAttribute("value");
@@ -179,7 +179,7 @@
             secondItem = [];
         }
         var secondCon = secondItem.join('x ')
-        
+
         //Tredje madvarer
         var third = document.getElementById("myNumber3").value;
         var y = document.getElementById("foodName3").getAttribute("value");
@@ -189,9 +189,9 @@
             thirdItem = [];
         }
         var thirdCon = thirdItem.join('x ')
-        
+
         //Evaluate basket size
-        
+
         //var currentVal = first.value;
         var basket = [];
         basket.push(firstCon, "\n", secondCon, "\n", thirdCon);
@@ -232,7 +232,7 @@
             items = JSON.parse(items);
 
             $(items).each(function(index, data) {
-                
+
                 document.getElementById('basket').innerHTML = data;
             });
         }
@@ -242,6 +242,19 @@
         refresh();
     });
 
+    function validateForm() {
+        var x = document.forms["orderForm"]["fnavn"].value;
+        var z = document.forms["orderForm"]["mobil_Nummer"].value;
+        if (x == "") {
+            alert("Venligst indtast dit navn");
+            return false;
+        }
+
+        if (z.length < 8 || z.length > 8) {
+            alert("Indtast venligst et gyldigt nummer");
+            return false;
+        }
+    }
 </script>
 
 </html>

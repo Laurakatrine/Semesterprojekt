@@ -10,13 +10,13 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    }
+}
 
 #dots {
     position: relative;
     bottom: 50px;
     margin: 0;
-}   
+}
 
 /*font-family: 'Rubik', sans-serif;
 font-family: 'Roboto', sans-serif;
@@ -170,17 +170,19 @@ img.logo {
 
 .navbar {
     margin: 0 auto 0 auto;
-    
+
 }
+
 .streg {
-   float: left;
+    float: left;
     position: relative;
     padding-top: 4.5px;
     opacity: 0.4;
 }
 
 
-.navbar, .content_master {
+.navbar,
+.content_master {
     /*background-color: rgba(245, 245, 220, 0.5);*/
 }
 
@@ -427,7 +429,7 @@ img.logo {
 
 .kontakt {
     display: inline-block;
-    
+
     /* places entire div in middle */
     width: 100%;
     padding-right: 15%;
@@ -440,18 +442,19 @@ img.logo {
     font-style: italic;
 
 }
-.left-contact{
+
+.left-contact {
     width: 49.6%;
     float: left;
 }
 
-.right-contact{
+.right-contact {
     width: 49.6%;
     float: right;
     padding-bottom: 0.5%;
 }
 
-#fortælling{
+#fortælling {
     font-family: sans-serif;
     padding-bottom: 27.59%;
 }
@@ -465,7 +468,7 @@ img.logo {
 }
 
 
-#contact{
+#contact {
     width: 80%;
     height: 80%;
     margin: auto;
@@ -480,12 +483,11 @@ img.logo {
     line-height: 150%;
 }
 
-#åbningstider{
+#åbningstider {
     font-family: 'Roboto', sans-serif;
 }
 
-#åbningstider h3 {
-}
+#åbningstider h3 {}
 
 #åbningstider p {
     line-height: 150%;
@@ -536,8 +538,6 @@ img.logo {
 
 /* KONTAKTFORMULAR SLUT */
 
-/* KONTAKT SECTION STOP */
-
 /* BESTILLING SEKTION START */
 
 #facebook {
@@ -548,8 +548,13 @@ img.logo {
     display: inline-grid;
 }
 
+#mobil_Number {
+    width: 20em;
+}
+
 
 /*hvis det her kører, bliver mappet vist udenfor kontekst*/
+
 /*#google {
     float: left;
     position: relative;
@@ -773,7 +778,7 @@ img.logo {
 /* VIDEO_SPORTS SEKTION START */
 
 .video_container iframe {
-    margin: 1% 0 0 0 
+    margin: 1% 0 0 0
 }
 
 /* VIDEO_SPORTS SEKTION STOP */
@@ -888,7 +893,7 @@ span {
 #nyheder {
     width: 75%;
     /border-style: solid;
-    
+
 }
 
 #nyheder .nyhed-billed {
@@ -910,7 +915,7 @@ span {
     ;
     margin-left: 5%;
     margin-right: 5%;
-}   
+}
 
 /* NYHEDER SLUT /*
 /*ARRANGEMENTER */
@@ -921,36 +926,37 @@ span {
     margin: auto;
     display: inline-block;
     width: 100%;
-    padding: 5%; 
-    margin: auto; 
-   
+    padding: 5%;
+    margin: auto;
+
 
 }
 
 
-.arrangementer_div h2{
-    
+.arrangementer_div h2 {
+
     font-weight: bold;
-    font-size: 20px;  
-    
-    
+    font-size: 20px;
+
+
 }
 
-.column left_Arrangementer,right_Arrangementer  {
+.column left_Arrangementer,
+right_Arrangementer {
     padding: 1%;
 
 }
 
 .left_Arrangementer {
     position: relative;
-  width: 50%;
-  margin: auto auto auto 7%;
+    width: 50%;
+    margin: auto auto auto 7%;
 }
 
 .right_Arrangementer {
-  width: 45%;
-margin-left: 30%; 
-  
+    width: 45%;
+    margin-left: 30%;
+
 }
 
 
@@ -974,7 +980,7 @@ margin-left: 30%;
     text-decoration: none;
     color: #000000;
     background: #e0da69;
-    margin-left: 50%; 
+    margin-left: 50%;
 
 
 }
@@ -987,7 +993,6 @@ margin-left: 30%;
 
 /* ARRANGEMENTER SLUT */
 
-
 /* NAVBAR START */
 
 #main_nav_menu {
@@ -996,6 +1001,7 @@ margin-left: 30%;
     font-size: 16px;
     border: none;
 }
+
 
 .dropdown {
     position: relative;
@@ -1049,3 +1055,30 @@ margin-left: 30%;
 .container {
     opacity: 0.9;
 }
+
+/* SOCIAL MEDIA START */
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    position: relative;
+    float: right;
+    bottom: 2.5em;
+    right: 10em;
+
+}
+
+/* SOCIAL MEDIA STOP */

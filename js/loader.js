@@ -61,7 +61,7 @@
 
     function loadOrderFood() {
         $(".content_sub > div").remove();
-        $(".navbar > div").remove();
+        $(".navbar >").remove();
         $("div.content_master > center").remove();
         $(".content_master").remove();
         $(".content_sub").load("bestilling.html");
