@@ -234,7 +234,8 @@ img.logo {
     list-style: none;
     text-align: center;
     padding: 1% 0% 1% 0%;
-    width: 66%;
+    margin-top: -1.4%;
+    width: 100%;
 }
 
 .navsub > li {
@@ -292,7 +293,7 @@ img.logo {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 1% auto 0 auto;
+    margin: 1% auto 0% auto;
 
 }
 
@@ -435,8 +436,8 @@ img.logo {
 
     /* places entire div in middle */
     width: 100%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 17.5%;
+    padding-left: 17.5%;
     margin-bottom: 1%;
 }
 
@@ -462,19 +463,10 @@ img.logo {
     padding-bottom: 27.59%;
 }
 
-#fortælling h3 {
-    margin-left: 10%;
-}
-
-#fortælling p {
-    margin-left: 10%
-}
-
 
 #contact {
     width: 80%;
     height: 80%;
-    margin: auto;
 }
 
 #oplysninger {
@@ -500,8 +492,6 @@ img.logo {
 
 #contact fieldset {
     border: none;
-
-
 }
 
 
@@ -802,7 +792,7 @@ span {
 
 /*img*/
 
-.popupMap {
+.popupMap{
     width: 100%;
     margin: auto;
 
@@ -929,41 +919,83 @@ span {
     font-family: 'Roboto', sans-serif;
     margin: auto;
     display: inline-block;
+    padding-left: 17.5%;
+    padding-top: 3%;
     width: 100%;
-    padding: 5%;
-    margin: auto;
-
-
 }
-
 
 .arrangementer_div h2 {
 
     font-weight: bold;
     font-size: 20px;
-
-
 }
 
-.column left_Arrangementer,
-right_Arrangementer {
-    padding: 1%;
-
-}
 
 .left_Arrangementer {
     position: relative;
-    width: 50%;
-    margin: auto auto auto 7%;
+    width: 45%;
+    line-height: 160%;
 }
 
 .right_Arrangementer {
     width: 45%;
-    margin-left: 30%;
-
+    padding-left: 3%;
 }
 
+#arrangementer_seperator{
+    margin-top: 4%;
+    border-bottom: 1px solid;
+}
 
+/*POPUP IMG ARRANGEMENTER START*/
+
+.popupMap_arrangementer{
+    width: 45%;
+    cursor: pointer;
+}
+
+.showMap_arrangementer {
+    z-index: 999;
+    display: none;
+}
+
+.showMap_arrangementer .overlayMap_arrangementer {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.showMap_arrangementer .img-showMap_arrangementer {
+    width: 600px;
+    height: 800px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+
+.img-showMap_arrangementer span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.img-showMap_arrangementer img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*POPUP IMG ARRANGEMENTER SLUT*/
 
 /* Clear floats after the columns */
 
@@ -984,7 +1016,7 @@ right_Arrangementer {
     text-decoration: none;
     color: #000000;
     background: #e0da69;
-    margin-left: 50%;
+    margin-left: 80%;
 
 
 }
@@ -1081,7 +1113,7 @@ right_Arrangementer {
     position: relative;
     float: right;
     bottom: 2.5em;
-    right: 10em;
+    right: 9em;
 
 }
 
