@@ -5,7 +5,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(245, 245, 220, 0.5);
+   /* background-color: rgba(245, 245, 220, 0.5); */
+   /* background-color: rgba(249,247,249,1);	*/
+   background-color: snow;
+   /* background-color: white;*/
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -103,7 +106,7 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-    /*background-color: white;*/
+    
 }
 
 .overskrift {
@@ -111,7 +114,7 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-    background-color: rgba(245, 245, 220, 0.5);
+   /* background-color: rgba(245, 245, 220, 0.5);*/
     margin: 0;
     padding: 25px;
     z-index: 0;
@@ -340,7 +343,7 @@ img.logo {
 .text {
     font-family: 'Roboto', sans-serif;
     color: #f2f2f2;
-    background-color: rgba(0, 0, 0, 0.2);
+   /* background-color: rgba(0, 0, 0, 0.2);*/
     font-size: 30px;
     padding: 8px 12px;
     position: absolute;
@@ -1083,3 +1086,53 @@ right_Arrangementer {
 }
 
 /* SOCIAL MEDIA STOP */
+
+ .here {
+        background-color: rgba(245, 245, 220, 0.8);
+        
+        color:black;
+        
+        float: right;
+        list-style-type:none;
+        font-family: inherit;
+        transform: rotate(-30deg);
+        letter-spacing: 1.5px;
+        position: relative;
+        
+        border-radius: 20px;
+     
+     text-align: left;
+        
+     
+        
+        
+        
+    } 
+#herekiosk{
+  bottom: 50px;
+        right: 110px;  
+    
+}
+
+#herecafe
+{
+  bottom: 50px;
+right: 90px;  
+}
+
+/*#herekiosk {
+	display: none;
+}
+
+#herekiosk.is-visible {
+	display: block;
+}
+
+#herecafe {
+	display: none;
+}
+
+#herecafe.is-visible {
+	display: block;
+}
+*/
