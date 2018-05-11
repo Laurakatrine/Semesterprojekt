@@ -268,7 +268,7 @@ img.logo {
 /* Billeder under submenu */
 
 .row {
-    display: flex;
+    display:flex;
     width: 90%;
     position: relative;
     right: 15px;
@@ -277,7 +277,7 @@ img.logo {
 
 .column {
 
-    padding: 5px;
+    padding:5px;
 }
 
 /* STYLE SECTION STOP */
@@ -905,12 +905,44 @@ span {
     /border-top: solid;
 }
 
+
+#content .nyhed_dato{
+    
+color: gray; 
+font-family: 'Roboto', sans-serif;
+    
+    
+    
+    
+}
+
+
 #content .nyhed-skrift {
     font-family: 'Roboto', sans-serif;
-    ;
     margin-left: 5%;
     margin-right: 5%;
 }
+#content .nyhed_seperator{
+    margin-top: 4%;
+    border-bottom: 1px solid;
+}
+#content .nyhed-energidrik {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+#content.nyhed-billed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+   
+}
+
+
 
 /* NYHEDER SLUT /*
 /*ARRANGEMENTER */
