@@ -5,31 +5,31 @@
 </head>
 
 <body>
-    <ul class="nav">    
-        <li><a href="#" id="main_nav_menu" onclick="loadMainMenu()"><b>Menu</b></a></li>
-         
-        <li><a href="#" id="main_nav_contact" onclick="loadMainContact()"><b>Kontakt</b></a></li>
-        
+    <ul class="nav">
+        <li><a href="#" id="main_nav_menu" class="nav_menu" onclick="loadMainMenu()"><b>Menu</b></a></li>
+
+        <li><a href="#" id="main_nav_contact" class="nav_menu" onclick="loadMainContact()"><b>Kontakt</b></a></li>
+
 
         <li style="float:left"><a class="active" href="../sportcafe_main/master.html"><b>Sportscaféen</b></a></li>
-       <li style="float:left"><a class="active" href="../strandkiosk_main/master.html"><b>Strandkioskerne</b></a><ul><li class="here" id="herekiosk">Du er her</li></ul></li>
-        <div class ="streg">
-        <img src="../img/white.png" height="40" width="2">
+        <li style="float:left"><a class="active" href="../strandkiosk_main/master.html"><b>Strandkioskerne</b></a>
+            <ul>
+                <li class="here" id="herekiosk">Du er her</li>
+            </ul>
+        </li>
+        <div class="streg">
+            <img src="../img/white.png" height="40" width="2">
         </div>
     </ul>
-    
-    
+
+
     <script>
-    
-    
-    $(".navbar").hover(function(){
-    $(".here, #herekiosk").fadeOut();
-        
-    }, function(){
-        $(".here, #herekiosk").fadeIn();
-});
-    
-    
+        $(".navbar").hover(function() {
+            $(".here, #herekiosk").fadeOut();
+
+        }, function() {
+            $(".here, #herekiosk").fadeIn();
+        });
     </script>
 </body>
 </html>

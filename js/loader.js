@@ -43,7 +43,7 @@
         if (pageLoaded == "Strandkioskerne") {
             $(".content_sub > div").remove();
             $(".content_master").remove();
-            $(".content_sub").load("KageTilStrandkioskerne.html");
+            $(".content_sub").load("is_strandkiosk.html");
         }
     }
 
