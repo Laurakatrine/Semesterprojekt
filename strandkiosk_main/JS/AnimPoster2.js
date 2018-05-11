@@ -16,9 +16,9 @@ function init() {
 
 function Opened() {
     //Background
-    var bgSunrise = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#ecd6b5", "#f0ae49"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 1000, 300));
+    var bgSunrise = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#ecd6b5", "#f0ae49"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 800, 400));
 
-    var bgDay = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#D1F7FF", "#39e5ff"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 1000, 300));
+    var bgDay = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#D1F7FF", "#39e5ff"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 800, 400));
     bgDay.x = -1000;
 
     stage.addChild(bgSunrise, bgDay);
@@ -32,8 +32,7 @@ function Opened() {
     stage.addChild(sun);
 
     var txtContainerSun = new createjs.Container();
-    //text box
-    var txtBoxSun = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#fff", "#009"], [0, 1], 0, 200, 0, 260).drawRect(800, 220, 600, 50));
+    var txtBoxSun = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#fff", "#009"], [0, 1], 0, 200, 0, 260).drawRect(800, 220, 500, 50));
 
     //text
     var txtSun = new createjs.Text('Solen skinner. Vi holder åbent.', "16px Roboto", "#ff0");
@@ -45,18 +44,18 @@ function Opened() {
     txtContainerSun.addChild(txtBoxSun, txtSun);
 
 
-    //degrees celcius text
+    //degrees celcius
     var txtDegrees = new createjs.Text('17°C', "100px Roboto", "#000");
-    txtDegrees.x = 550;
-    txtDegrees.y = 50;
+    txtDegrees.x = 450;
+    txtDegrees.y = 100;
 
     //Add to stage
     stage.addChild(txtContainerSun, txtDegrees);
     
     //TWEEN
     createjs.Tween.get(txtContainerSun).to({
-        x: -370,
-        y: -20
+        x: -500,
+        y: 50
     }, 1500, createjs.Ease.linear);
 
     createjs.Tween.get(sun).to({
@@ -75,14 +74,14 @@ function Opened() {
 
 function ClosedRain() {
     //Background
-    var bg = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#465c67", "#326a85"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 1000, 300));
+    var bg = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#465c67", "#326a85"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 800, 400));
     stage.addChild(bg);
 
     //rainDrop
     var drops = new Array();
     for (i = 0; i < 100; i++) {
         var drop = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#777", "#ddd"], [0, 1], 0, 5, 0, 20).drawRoundRect(0, 0, 2, 20, 2));
-        drop.x = Math.random() * 1000;
+        drop.x = Math.random() * 800;
         drop.y = -15;
         drops.push(drop);
 
@@ -100,9 +99,9 @@ function ClosedRain() {
     }
     
     var txtContainerRain = new createjs.Container();
-    //text box
-    var txtBoxRain = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#555", "#000"], [0, 1], 0, 160, 0, 280).drawRect(200, 110, 600, 80));
-    //text
+    
+    var txtBoxRain = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#555", "#000"], [0, 1], 0, 160, 0, 280).drawRect(100, 160, 600, 80));
+    
     var txtRain = new createjs.Text('Vi holder lukket pga. regn', "50px Roboto", "#fff");
     txtRain.textBaseline = "middle";
     txtRain.textAlign = "center";
@@ -115,14 +114,14 @@ function ClosedRain() {
 
 function ClosedBecause() {
     //Background
-    var bg = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#465f67", "#326a85"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 1000, 300));
+    var bg = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#465f67", "#326a85"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 800, 400));
     stage.addChild(bg);
 
     var txtContainer = new createjs.Container();
     var txtBox = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#555", "#000"], [0, 1], 0, 200, 0, 260).drawRect(800, 220, 500, 50));
 
     //Write reason for closed here
-    var CLOSEDBC = 'Vi holder lukket i dag pga. sygdom';
+    var CLOSEDBC = 'Jeg gider ikke at arbejde idag LOL xD';
     //text
     var txt = new createjs.Text(CLOSEDBC, "14px Roboto", "#fff");
     txt.textBaseline = "middle";
@@ -135,24 +134,24 @@ function ClosedBecause() {
     stage.addChild(txtContainer);
 
     createjs.Tween.get(txtContainer).to({
-        x: -250, y: -50
+        x: -500
     }, 1000, createjs.Ease.linear);
 }
 
 function ClosedForSeason() {
     //Background
-    var bg = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#465f67", "#000"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 1000, 300));
+    var bg = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#465f67", "#000"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 800, 400));
     stage.addChild(bg);
 
     var txtContainer2 = new createjs.Container();
-    var txtBox2 = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#555", "#000"], [0, 1], 0, 175, 0, 280).drawRect(800, 175, 500, 50));
+    var txtBox2 = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#555", "#000"], [0, 1], 0, 250, 0, 280).drawRect(800, 250, 500, 50));
 
     //text2
-    var txt2 = new createjs.Text('Vi holder sæsonlukket. Strandkioskerne åbner igen i maj', "14px Roboto", "#fff");
+    var txt2 = new createjs.Text('Vi holder sæsonlukket. Strandkioskerne åbner igen Fredag d. 13', "14px Roboto", "#fff");
     txt2.textBaseline = "middle";
     txt2.textAlign = "left";
     txt2.x = 820;
-    txt2.y = 200;
+    txt2.y = 275;
 
     txtContainer2.addChild(txtBox2, txt2);
 
