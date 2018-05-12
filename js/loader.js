@@ -51,12 +51,24 @@
         $(".content_sub > div").remove();
         $(".content_master").remove();
         $(".content_sub").load("KunDrikkelse.html");
+
+        if (pageLoaded == "Strandkioskerne") {
+            $(".content_sub > div").remove();
+            $(".content_master").remove();
+            $(".content_sub").load("drikkelse_strandkiosk.html");
+        }
     }
 
     function loadSnacks() {
         $(".content_sub > div").remove();
         $(".content_master").remove();
         $(".content_sub").load("KunKage.html");
+
+        if (pageLoaded == "Strandkioskerne") {
+            $(".content_sub > div").remove();
+            $(".content_master").remove();
+            $(".content_sub").load("cake_strandkiosk.html");
+        }
     }
 
     function loadOrderFood() {
