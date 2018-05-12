@@ -165,11 +165,12 @@ img.logo {
     background-color: #6F1D18;
     color: #ffffff;
     list-style: none;
-    text-align: center;
+    /* text-align: center; */
     padding: 1% 0% 1% 0%;
     font-family: 'Rubik', sans-serif;
     margin: 0 auto 0 auto;
 }
+
 
 .navbar {
     margin: 0 auto 0 auto;
@@ -1161,7 +1162,7 @@ font-family: 'Roboto', sans-serif;
 /* CANVAS SEKTION START */
 
 #canvas {
-    margin: 1% auto 0 auto;
+    margin: 1% 3% 1% 5%;
 }
 
 .container {
