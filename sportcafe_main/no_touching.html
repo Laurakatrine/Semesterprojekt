@@ -1,0 +1,99 @@
+ <html>
+<head>
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <style>
+        .boldClass {
+            font-weight: bold;
+        }
+
+        .italicsClass {
+            font-style: italic;
+        }
+
+        .colorClass {
+            color: red;
+            
+        }
+        
+        .Mad {
+            display: none;
+}
+         .Drikkelse {
+            display: none;
+}
+         .Kage {
+            display: none;
+}
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                 $("#row").removeClass('Mad');
+                 $("div").removeClass('Drikkelse');
+                 $("div").removeClass('Kage');
+                  
+            });
+
+            $('#btn2').click(function () {
+                 
+                 $("div").addClass('Drikkelse');
+              
+            });
+
+            $('#btn3').click(function () {
+                $("div").removeClass('Mad Drikkelse')
+            });
+
+            $('#btn4').click(function () {
+                $('p').removeClass('colorClass italicsClass');
+            });
+
+            $('#btn5').click(function () {
+                $('p').addClass('colorClass italicsClass boldClass');
+            });
+
+            $('#btn6').click(function () {
+                $('p').removeClass();
+            });
+        });
+    </script>
+</head>
+<body style="font-family:Arial">
+   <div class="row">
+            <div class="Mad">
+                <img src="../img/MENU/drikkevare1.jpg" alt="Fjords" style="width:20%">
+            </div>
+            <div class="Drikkelse">
+                <img src="../img/MENU/drikkevare2.jpeg" alt="Forest" style="width:20%">
+            </div>
+            <div class="Kage">
+                <img src="../img/MENU/drikkevare3.jpeg" alt="Mountains" style="width:20%">
+            </div>
+            
+        </div>
+    <table>
+        <tr>
+            <td>
+                <input id="btn1" style="width:250px" type="button"
+                       value="Alle" />
+            </td>
+            <td>
+                <input id="btn2" style="width:250px" type="button"
+                       value="Mad" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btn3" style="width:250px" type="button"
+                       value="Drikkelse" />
+            </td>
+            <td>
+                <input id="btn4" style="width:250px" type="button"
+                       value="Kage" />
+            </td>
+        </tr>
+      
+    </table>
+</body>
+</html>
