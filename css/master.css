@@ -279,6 +279,47 @@ img.logo {
     padding:5px;
 }
 
+
+#submenu_food 
+{box-sizing: border-box;
+
+}
+
+
+.container {
+  position: relative;
+}
+
+.image_Menu {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
 /* STYLE SECTION STOP */
 
 /* SLIDESHOW SECTION START */
@@ -799,9 +840,11 @@ span {
 }
 
 .popupMap img {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
+    padding-bottom: 5%;
     cursor: pointer
+    
 }
 
 .showMap {
@@ -819,7 +862,7 @@ span {
 }
 
 .showMap .img-showMap {
-    width: 600px;
+    width: 800px;
     height: 400px;
     background: #FFF;
     position: absolute;
@@ -929,6 +972,7 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
     margin-left: 5%;
     margin-right: 5%;
+    padding-bottom: 2%;
 }
 
 
