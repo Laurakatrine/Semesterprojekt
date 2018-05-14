@@ -5,10 +5,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   /* background-color: rgba(245, 245, 220, 0.5); */
-   /* background-color: rgba(249,247,249,1);	*/
-   background-color: snow;
-   /* background-color: white;*/
+   
+   background-color: rgba(249,247,249,1);
+  
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -28,7 +27,8 @@ font-family: 'Roboto', sans-serif;
 
 .tickercontainer {
     /* the outer div with the black border */
-    background: linear-gradient(#D5382E, #000);
+    /*background: linear-gradient(to bottom right,#BB2926, #BB2926 60%,  #6f1d18);*/
+    background: linear-gradient(#BB2926,#BB2926 60%, #6f1d18);
     width: 100%;
     height: 70px;
     margin: 0;
@@ -128,7 +128,7 @@ a {
 .footer {
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
-    background-color: #4d0802;
+    background-color: #BB2926;
     color: #fff;
     padding-bottom: 0.5%;
     padding-top: 0.5%;
@@ -167,7 +167,7 @@ a {
 /* Naviagtionsbar */
 
 .nav {
-    background-color: #6F1D18;
+    background-color: #BB2926;
     color: #ffffff;
     list-style: none;
     /* text-align: center; */
@@ -235,7 +235,7 @@ a {
 /* SubMenu */
 
 .navsub {
-    background-color: #6F1D18;
+    background-color: #BB2926;
     color: #ffffff;
     list-style: none;
     text-align: center;
