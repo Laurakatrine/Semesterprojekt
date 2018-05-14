@@ -28,7 +28,7 @@
 
     function loadMainContact() {
         $(".content_sub > div").remove();
-        $(".navbar > div").remove();
+        $(".navbar > ").remove();
         $(".content_master").remove();
         $("div.content_master > center").remove();
         $(".content_sub").load("kontakt.html");
