@@ -582,11 +582,10 @@ a {
 
 
 #facebook {
-    float: right;
-    position: relative;
     margin: auto;
     padding: auto;
-    display: inline-grid;
+    display: inline-block;
+    float: right;
 }
 
 #mobil_Number {
@@ -1192,10 +1191,8 @@ font-family: 'Roboto', sans-serif;
 .fa-facebook {
     background: #3B5998;
     color: white;
-    position: relative;
     float: right;
-    bottom: 2.5em;
-    right: 9em;
+    margin-right: 10%;
 
 }
 
