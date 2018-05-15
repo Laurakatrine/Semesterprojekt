@@ -514,8 +514,8 @@ a {
 }
 
 #fortælling {
-    font-family: sans-serif;
-    padding-bottom: 27.59%;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5%;
 }
 
 
@@ -834,10 +834,15 @@ a {
 /* IDRÆTSCENTERET SEKTION START */
 
 .idrætscenteret {
-    font-family: Verdana;
+    font-family: 'Roboto';
     padding-left: 17.5%;
     width: 100%;
     margin: auto;
+}
+
+h3{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
 }
 
 span {
@@ -954,6 +959,7 @@ span {
 #nyheder h3 {
     margin-left: 5%;
     font-family: 'Roboto', sans-serif;
+    font-size: 32px;
 }
 
 #content {
@@ -1016,7 +1022,7 @@ font-family: 'Roboto', sans-serif;
 .arrangementer_div h2 {
 
     font-weight: bold;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 
