@@ -1,97 +1,89 @@
-    var pageLoaded = $(document).attr("title");
-    var seasonOpen = true; // Sæson åbent = true || sæson lukket = false
-    var localOpen = true; // Butik åbent = true || butik lukket = false
+/* DEVELOPED FOR EDUCATIONAL PURPOSES */
 
-    $(document).ready(function () {
-        $(".header").load("news.html");
-        $("footer").load("titel-Footer.html");
-        $(".submenu_master").load("navbar_simple.html");
-        $(".navbar").load("slideshow.html");
-        $(".content_master").load("frontPage_content.html");
+var pageLoaded = $(document).attr("title");
 
-        if (pageLoaded == "Strandkioskerne" && seasonOpen == true && localOpen == true) {
-            $(".header").remove();
-        } else if (pageLoaded == "Strandkioskerne" && seasonOpen == true && localOpen == false) {
-            // Sæson åbent, men lokal lukket
-        } else if (pageLoaded == "Strandkioskerne" && seasonOpen == false && localOpen == false) {
-            // Sæson lukket, og lokal lukkets
-        }
-    });
+$(document).ready(function () {
+    $(".header").load("news.html");
+    $("footer").load("titel-Footer.html");
+    $(".submenu_master").load("navbar_simple.html");
+    $(".navbar").load("slideshow.html");
+    $(".content_master").load("frontPage_content.html");
+});
 
-    function loadMainMenu() {
+function loadMainMenu() {
+    $(".content_sub > div").remove();
+    $(".content_master").remove();
+    $(".submenu_master").load("navbar_simple.html");
+    $(".navbar").load("slideshow.html");
+    $(".content_sub").load("submenu.html");
+}
+
+function loadMainContact() {
+    $(".content_sub > div").remove();
+    $(".navbar > ").remove();
+    $(".content_master").remove();
+    $("div.content_master > center").remove();
+    $(".content_sub").load("kontakt.html");
+}
+
+function loadFood() {
+
+    if (pageLoaded == "Strandkioskerne") {
         $(".content_sub > div").remove();
         $(".content_master").remove();
-        $(".submenu_master").load("navbar_simple.html");
-        $(".navbar").load("slideshow.html");
-        $(".content_sub").load("submenu.html");
+        $(".content_sub").load("is_strandkiosk.html");
     }
+    $(".content_sub > div").remove();
+    $(".content_master").remove();
+    $(".content_sub").load("Mad.html");
 
-    function loadMainContact() {
-        $(".content_sub > div").remove();
-        $(".navbar > ").remove();
-        $(".content_master").remove();
-        $("div.content_master > center").remove();
-        $(".content_sub").load("kontakt.html");
-    }
+}
 
-    function loadFood() {
-
+function loadDrinks() {
+    if (pageLoaded == "Strandkioskerne") {
         $(".content_sub > div").remove();
         $(".content_master").remove();
-        $(".content_sub").load("Mad.html");
-
-        if (pageLoaded == "Strandkioskerne") {
-            $(".content_sub > div").remove();
-            $(".content_master").remove();
-            $(".content_sub").load("is_strandkiosk.html");
-        }
+        $(".content_sub").load("drikkelse_strandkiosk.html");
     }
+    $(".content_sub > div").remove();
+    $(".content_master").remove();
+    $(".content_sub").load("KunDrikkelse.html");
 
-    function loadDrinks() {
+}
+
+function loadSnacks() {
+    if (pageLoaded == "Strandkioskerne") {
         $(".content_sub > div").remove();
         $(".content_master").remove();
-        $(".content_sub").load("KunDrikkelse.html");
-
-        if (pageLoaded == "Strandkioskerne") {
-            $(".content_sub > div").remove();
-            $(".content_master").remove();
-            $(".content_sub").load("drikkelse_strandkiosk.html");
-        }
+        $(".content_sub").load("cake_strandkiosk.html");
     }
+    $(".content_sub > div").remove();
+    $(".content_master").remove();
+    $(".content_sub").load("KunKage.html");
 
-    function loadSnacks() {
-        $(".content_sub > div").remove();
-        $(".content_master").remove();
-        $(".content_sub").load("KunKage.html");
+}
 
-        if (pageLoaded == "Strandkioskerne") {
-            $(".content_sub > div").remove();
-            $(".content_master").remove();
-            $(".content_sub").load("cake_strandkiosk.html");
-        }
-    }
+function loadOrderFood() {
+    $(".content_sub > div").remove();
+    $(".navbar >").remove();
+    $("div.content_master > center").remove();
+    $(".content_master").remove();
+    $(".content_sub").load("bestilling.html");
+}
 
-    function loadOrderFood() {
-        $(".content_sub > div").remove();
-        $(".navbar >").remove();
-        $("div.content_master > center").remove();
-        $(".content_master").remove();
-        $(".content_sub").load("bestilling.html");
-    }
+function loadEvents() {
+    $(".content_sub > div").remove();
+    $(".navbar > div").remove();
+    $("div.content_master > center").remove();
+    $(".content_master").remove();
+    $(".navbar").load("video_sport.html")
+    $(".content_sub").load("arrangementer.html");
+}
 
-    function loadEvents() {
-        $(".content_sub > div").remove();
-        $(".navbar > div").remove();
-        $("div.content_master > center").remove();
-        $(".content_master").remove();
-        $(".navbar").load("video_sport.html")
-        $(".content_sub").load("arrangementer.html");
-    }
-
-    function loadSportsCenter() {
-        $(".content_sub > div").remove();
-        $(".content_master").remove();
-        $("div.content_master > center").remove();
-        $(".navbar").load("slideshow.html");
-        $(".content_sub").load("idrætscenteret.html");
-    }
+function loadSportsCenter() {
+    $(".content_sub > div").remove();
+    $(".content_master").remove();
+    $("div.content_master > center").remove();
+    $(".navbar").load("slideshow.html");
+    $(".content_sub").load("idrætscenteret.html");
+}

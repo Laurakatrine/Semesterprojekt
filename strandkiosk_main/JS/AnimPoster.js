@@ -1,4 +1,15 @@
 var stage;
+var openDay = true;
+var openWeather = false;
+var openSeason = true;
+
+
+/* KONTROL PANEL PROTOTYPE */
+var openDayBoolean = localStorage.getItem('openDayBoolean');
+
+if (openDayBoolean == "false") {
+    openDay = false;
+}
 
 function init() {
     stage = new createjs.Stage(document.getElementById('canvas'));
@@ -6,9 +17,16 @@ function init() {
     createjs.Ticker.addEventListener("tick", function (e) {
         stage.update();
     });
-
+    
+    
+    if (openDay == true) {
+        Opened();
+    } else if (openSeason == false) {
+        ClosedForSeason();
+    } else {
+        ClosedRain();
+    }
     //Shop is **** funtions
-    Opened();
     //ClosedRain();
     //ClosedBecause();
     //ClosedForSeason();

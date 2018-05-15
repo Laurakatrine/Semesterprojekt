@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Kontrolpanel</title>
+
+    <script src="strandkiosk_main/JS/AnimPoster.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Kontrolpanel</h2>
+        <p>Åbent i dag?</p>
+        <label class="switch" for="localOpen"><br>
+          <input id="localOpen" type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <p>Sæson åbent?</p>
+        <label class="switch" for="seasonOpen"><br>
+          <input id="seasonOpen" type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+
+
+    </div>
+
+</body>
+<script>
+    if (openDay == false) {
+        document.getElementById("localOpen").removeAttribute("checked");
+    }
+
+    if (openSeason == false) {
+        document.getElementById("seasonOpen").removeAttribute("checked");
+    }
+
+    if ($("localOpen").is(':checked')) {
+        var openDayBoolean = false;
+        localStorage.setItem("openDayBoolean", openDayBoolean);
+    } else {
+        openDayBoolean = true;
+        localStorage.setItem("openDayBoolean", openDayBoolean);
+    }
+
+</script>
+
+</html>

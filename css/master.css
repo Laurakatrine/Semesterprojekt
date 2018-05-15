@@ -849,6 +849,11 @@ span {
     font-weight: bold;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /*img*/
 
 .popupMap{
