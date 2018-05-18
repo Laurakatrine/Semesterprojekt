@@ -271,7 +271,7 @@ a {
 
 .submenu {
     background: #FC4237;
-
+    font-family: 'Roboto', sans-serif;
     border-radius: 20px;
 
     width: 150%;
@@ -294,9 +294,9 @@ a {
 }
 
 
-#submenu_food 
-{box-sizing: border-box;
-
+#submenu_food {
+    box-sizing: border-box;
+    margin-bottom: 1%;
 }
 
 
@@ -328,10 +328,6 @@ a {
 .container:hover .overlay {
   opacity: 1;
 }
-
-
-
-
 
 
 /* STYLE SECTION STOP */
