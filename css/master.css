@@ -146,7 +146,7 @@ a {
 }
 
 .leftFoot {
-    width: 50%;
+    width: 45%;
     float: left;
     padding-left: 10%;
 }
@@ -154,7 +154,7 @@ a {
 .rightFoot {
     display: inline-block;
     padding-left: 10%;
-    width: 50%;
+    width: 45%;
 }
 
 /* TITEL-FOOTER SECTION STOP */
@@ -1214,7 +1214,7 @@ font-family: 'Roboto', sans-serif;
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 2% 2px;
 }
 
 .fa:hover {
@@ -1225,7 +1225,8 @@ font-family: 'Roboto', sans-serif;
     background: #3B5998;
     color: white;
     float: right;
-    margin-right: 10%;
+    margin-right: 5%;
+    
 
 }
 
