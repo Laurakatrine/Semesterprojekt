@@ -5,20 +5,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     background-color: rgba(249, 247, 249, 1);
-
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-
-
 }
 
 body p {
     text-align: justify;
-
 }
 
 #dots {
@@ -52,7 +47,7 @@ font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
 
-/*list */
+/* LIST */
 
 ul.newsticker {
     position: relative;
@@ -87,7 +82,7 @@ ul.newsticker span {
     margin: 0 10px 0 0;
 }
 
-/*placement of logo*/
+/* PLACEMENT OF LOGO */
 
 .header {
     margin-top: 0.5em;
@@ -105,6 +100,7 @@ img.logo {
 
 /* NEWSBAR SECTION STOP */
 
+
 /* TITEL-FOOTER SECTION START */
 
 #overskrift {
@@ -112,7 +108,6 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-
 }
 
 .overskrift {
@@ -120,11 +115,9 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-    /* background-color: rgba(245, 245, 220, 0.5);*/
     margin: 0;
     padding: 25px;
     z-index: 0;
-
 }
 
 a {
@@ -159,16 +152,8 @@ a {
 
 /* TITEL-FOOTER SECTION STOP */
 
+
 /* STYLE SECTION START*/
-
-/* Giver den her problemer ???*/
-
-/*body {
-       margin: 0;
-       padding: 0;
-       font-family: 'Roboto', sans-serif;
-   }
-*/
 
 /* Naviagtionsbar */
 
@@ -199,18 +184,13 @@ a {
 }
 
 
-.navbar,
-.content_master {
-    /*background-color: rgba(245, 245, 220, 0.5);*/
-}
-
 /* Nav Knapper */
 
 .nav > li {
     display: inline-block;
     padding: 0% 1.5% 0% 1.5%;
-
 }
+
 
 /* Nav Knapper */
 
@@ -222,25 +202,23 @@ a {
     text-align: center;
     padding: 14px 16px;
     letter-spacing: 0.5px;
-
-
 }
 
 .nav > li > a:hover {
     color: #c1c1c1 !important;
-
 }
+
 
 /* Gule Knapper */
 
 .active {
     background: linear-gradient(#FFFA64, #F2ED4D);
-
     border-radius: 20px;
     color: black !important;
     width: 100%;
     height: 10%;
 }
+
 
 /* SubMenu */
 
@@ -257,7 +235,6 @@ a {
 .navsub > li {
     display: inline-block;
     padding: 0% 1% 0% 2%;
-
 }
 
 .navsub > li > a {
@@ -267,18 +244,16 @@ a {
     color: white;
     text-align: center;
     padding: 15px 0px;
-
-
 }
 
 .submenu {
     background: #FC4237;
     font-family: 'Roboto', sans-serif;
     border-radius: 20px;
-
     width: 170px;
     height: 50%;
 }
+
 
 /* Billeder under submenu */
 
@@ -289,16 +264,13 @@ a {
 }
 
 .column {
-
     padding: 5px;
 }
-
 
 #submenu_food {
     box-sizing: border-box;
     margin-bottom: 1%;
 }
-
 
 .container {
     position: relative;
@@ -330,8 +302,8 @@ a {
     opacity: 1;
 }
 
-
 /* STYLE SECTION STOP */
+
 
 /* SLIDESHOW SECTION START */
 
@@ -346,7 +318,6 @@ a {
     max-width: 1000px;
     position: relative;
     margin: 1% auto 0% auto;
-
 }
 
 
@@ -417,7 +388,6 @@ a {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-
 }
 
 .active,
@@ -479,13 +449,13 @@ a {
 
 /* SLIDESHOW SECTION STOP */
 
+
 /* KONTAKT SECTION START */
 
 /* div around entire contact element */
 
 .kontakt {
     display: inline-block;
-
     /* places entire div in middle */
     width: 100%;
     padding-right: 17.5%;
@@ -496,7 +466,6 @@ a {
 .kontakt span {
     font-weight: normal;
     font-style: italic;
-
 }
 
 .left-contact {
@@ -514,7 +483,6 @@ a {
     font-family: 'Roboto', sans-serif;
     padding-bottom: 5%;
 }
-
 
 #contact {
     width: 80%;
@@ -565,7 +533,6 @@ a {
     font-size: 16px;
     background: #F5ECCE;
     border: none;
-
 }
 
 #contact input {
@@ -579,7 +546,6 @@ a {
 }
 
 #contact button {
-
     font: 14px 'Roboto', sans-serif;
     background: #F5DA81;
     padding: 1% 2%;
@@ -602,18 +568,13 @@ a {
     width: 20em;
 }
 
-/*hvis det her kører, bliver mappet vist udenfor kontekst*/
-
-/*#google {
-    float: left;
-    position: relative;
-    top: 20em;
-}*/
-
 #google_ice {
     top: 20em;
     position: relative;
+}
 
+#google_ice_kontakt{
+    margin-top: 1.5em;
 }
 
 .bestilling {
@@ -711,6 +672,7 @@ a {
     border-radius: 3px;
     background: #fff;
 }
+
 
 /* Close Button */
 
@@ -847,6 +809,7 @@ p {
     text-justify: inter-word;
 }
 
+
 /*img*/
 
 .popupMap {
@@ -928,8 +891,6 @@ p {
     clear: both;
 }
 
-#facebook iframe {}
-
 #nyheder {
     position: relative;
     top: -25px;
@@ -969,7 +930,6 @@ p {
 }
 
 #content .nyhed_dato {
-
     color: gray;
     font-family: 'Roboto', sans-serif;
     margin-right: 5%;
@@ -991,7 +951,6 @@ p {
     padding-bottom: 2%;
 }
 
-
 #content.nyhed-billed {
     display: block;
     margin-left: auto;
@@ -1005,7 +964,6 @@ p {
 /*ARRANGEMENTER */
 
 .arrangementer_div {
-
     font-family: 'Roboto', sans-serif;
     margin: auto;
     display: inline-block;
@@ -1015,11 +973,9 @@ p {
 }
 
 .arrangementer_div h2 {
-
     font-weight: bold;
     font-size: 32px;
 }
-
 
 .left_Arrangementer {
     position: relative;
@@ -1038,6 +994,7 @@ p {
     margin-top: 4%;
     border-bottom: 1px solid;
 }
+
 
 /*POPUP IMG ARRANGEMENTER START*/
 
@@ -1089,6 +1046,7 @@ p {
 
 /*POPUP IMG ARRANGEMENTER SLUT*/
 
+
 /* Clear floats after the columns */
 
 .row:after {
@@ -1096,7 +1054,6 @@ p {
     display: table;
     clear: both;
 }
-
 
 .button_arrangementer {
     background: #FFFF;
@@ -1109,17 +1066,15 @@ p {
     color: #000000;
     background: #e0da69;
     margin-left: 80%;
-
-
 }
 
 .button_arrangementer:hover {
     background: #ccaf64;
     text-decoration: none;
-
 }
 
 /* ARRANGEMENTER SLUT */
+
 
 /* NAVBAR START */
 
@@ -1182,13 +1137,13 @@ p {
 
 .inactive {
     background: linear-gradient(#FFFA64, #F2ED4D);
-
     border-radius: 20px;
     color: black !important;
     width: 100%;
     height: 10%;
     opacity: 0.5;
 }
+
 
 /* CANVAS SEKTION START */
 
@@ -1199,6 +1154,7 @@ p {
 .container {
     opacity: 0.9;
 }
+
 
 /* SOCIAL MEDIA START */
 
@@ -1224,58 +1180,30 @@ p {
     color: white;
     float: right;
     margin-right: 5%;
-
-
 }
 
 /* SOCIAL MEDIA STOP */
 
+
 .here {
     background-color: rgba(245, 245, 220, 0.8);
-
     color: black;
-
     float: right;
     list-style-type: none;
     font-family: inherit;
     transform: rotate(-30deg);
     letter-spacing: 1.5px;
     position: relative;
-
     border-radius: 20px;
-
     text-align: left;
-
-
-
-
-
 }
 
 #herekiosk {
     bottom: 50px;
     right: 110px;
-
 }
 
 #herecafe {
     bottom: 50px;
     right: 90px;
 }
-
-/*#herekiosk {
-	display: none;
-}
-
-#herekiosk.is-visible {
-	display: block;
-}
-
-#herecafe {
-	display: none;
-}
-
-#herecafe.is-visible {
-	display: block;
-}
-*/
