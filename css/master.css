@@ -5,19 +5,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
-   background-color: rgba(249,247,249,1);
-  
+
+    background-color: rgba(249, 247, 249, 1);
+
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-   
+
 
 }
+
 body p {
-     text-align: justify;
-       
+    text-align: justify;
+
 }
 
 #dots {
@@ -34,7 +35,7 @@ font-family: 'Roboto', sans-serif;
 .tickercontainer {
     /* the outer div with the black border */
     /*background: linear-gradient(to bottom right,#BB2926, #BB2926 60%,  #6f1d18);*/
-    background: linear-gradient(#BB2926,#BB2926 60%, #6f1d18);
+    background: linear-gradient(#BB2926, #BB2926 60%, #6f1d18);
     width: 100%;
     height: 70px;
     margin: 0;
@@ -112,7 +113,7 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-    
+
 }
 
 .overskrift {
@@ -120,16 +121,16 @@ img.logo {
     font-size: 72px;
     text-align: center;
     color: #3d3d36;
-   /* background-color: rgba(245, 245, 220, 0.5);*/
+    /* background-color: rgba(245, 245, 220, 0.5);*/
     margin: 0;
     padding: 25px;
     z-index: 0;
-    
+
 }
 
 a {
-      text-decoration:none;
-   }
+    text-decoration: none;
+}
 
 .footer {
     font-family: 'Roboto', sans-serif;
@@ -183,7 +184,7 @@ a {
     font-size: 20px;
 }
 
-#letterSpacing{
+#letterSpacing {
     letter-spacing: 2px;
 }
 
@@ -256,7 +257,7 @@ a {
 
 .navsub > li {
     display: inline-block;
-    padding: 0% 7% 0% 2%;
+    padding: 0% 1% 0% 2%;
 
 }
 
@@ -266,7 +267,7 @@ a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 0px;
 
 
 }
@@ -276,14 +277,14 @@ a {
     font-family: 'Roboto', sans-serif;
     border-radius: 20px;
 
-    width: 150%;
-    height: 10%;
+    width: 170px;
+    height: 50%;
 }
 
 /* Billeder under submenu */
 
 .row {
-    display:flex;
+    display: flex;
     width: 90%;
     position: relative;
     right: 15px;
@@ -292,7 +293,7 @@ a {
 
 .column {
 
-    padding:5px;
+    padding: 5px;
 }
 
 
@@ -303,32 +304,33 @@ a {
 
 
 .container {
-  position: relative;
+    position: relative;
 }
 
 .image_Menu {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 
@@ -397,7 +399,7 @@ a {
 .text {
     font-family: 'Roboto', sans-serif;
     color: #f2f2f2;
-   /* background-color: rgba(0, 0, 0, 0.2);*/
+    /* background-color: rgba(0, 0, 0, 0.2);*/
     font-size: 30px;
     padding: 8px 12px;
     position: absolute;
@@ -490,7 +492,7 @@ a {
     /* places entire div in middle */
     width: 100%;
     padding-right: 17.5%;
-    padding-left: 17.5%;
+    padding-left: 18%;
     margin-bottom: 1%;
 }
 
@@ -586,7 +588,6 @@ a {
 
 /* BESTILLING SEKTION START */
 
-
 #facebook {
     margin: auto;
     padding: auto;
@@ -610,6 +611,7 @@ a {
 #google_ice {
     top: 20em;
     position: relative;
+
 }
 
 /* den her gør intet, der er ingen class button i bestilling
@@ -838,7 +840,7 @@ a {
     margin: auto;
 }
 
-h3{
+h3 {
     font-size: 32px;
     font-family: 'Roboto', sans-serif;
 }
@@ -854,7 +856,7 @@ p {
 
 /*img*/
 
-.popupMap{
+.popupMap {
     width: 100%;
     margin: auto;
 
@@ -865,7 +867,6 @@ p {
     height: 300px;
     padding-bottom: 5%;
     cursor: pointer
-    
 }
 
 .showMap {
@@ -970,14 +971,14 @@ p {
 }
 
 
-#content .nyhed_dato{
-    
-color: gray; 
-font-family: 'Roboto', sans-serif;
-    
-    
-    
-    
+#content .nyhed_dato {
+
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+
+
+
+
 }
 
 
@@ -986,10 +987,12 @@ font-family: 'Roboto', sans-serif;
     margin-left: 5%;
     margin-right: 5%;
 }
-#content .nyhed_seperator{
+
+#content .nyhed_seperator {
     margin-top: 4%;
     border-bottom: 1px solid;
 }
+
 #content .nyhed-energidrik {
     font-family: 'Roboto', sans-serif;
     margin-left: 5%;
@@ -1004,7 +1007,7 @@ font-family: 'Roboto', sans-serif;
     margin-right: auto;
     width: 50%;
 
-   
+
 }
 
 
@@ -1040,14 +1043,14 @@ font-family: 'Roboto', sans-serif;
     padding-left: 3%;
 }
 
-#arrangementer_seperator{
+#arrangementer_seperator {
     margin-top: 4%;
     border-bottom: 1px solid;
 }
 
 /*POPUP IMG ARRANGEMENTER START*/
 
-.popupMap_arrangementer{
+.popupMap_arrangementer {
     width: 45%;
     cursor: pointer;
 }
@@ -1137,19 +1140,19 @@ font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
 }
 
-#main_nav_order{
+#main_nav_order {
     letter-spacing: 2px;
 }
 
-#main_nav_events{
+#main_nav_events {
     letter-spacing: 2px;
 }
 
-#main_nav_sports{
+#main_nav_sports {
     letter-spacing: 2px;
 }
 
-#main_nav_contact{
+#main_nav_contact {
     letter-spacing: 2px;
 }
 
@@ -1217,7 +1220,7 @@ font-family: 'Roboto', sans-serif;
     margin: 2% 2px;
 }
 
-.faKiosk{
+.faKiosk {
     margin: 3% 2px;
 }
 
@@ -1230,43 +1233,43 @@ font-family: 'Roboto', sans-serif;
     color: white;
     float: right;
     margin-right: 5%;
-    
+
 
 }
 
 /* SOCIAL MEDIA STOP */
 
- .here {
-        background-color: rgba(245, 245, 220, 0.8);
-        
-        color:black;
-        
-        float: right;
-        list-style-type:none;
-        font-family: inherit;
-        transform: rotate(-30deg);
-        letter-spacing: 1.5px;
-        position: relative;
-        
-        border-radius: 20px;
-     
-     text-align: left;
-        
-     
-        
-        
-        
-    } 
-#herekiosk{
-  bottom: 50px;
-        right: 110px;  
-    
+.here {
+    background-color: rgba(245, 245, 220, 0.8);
+
+    color: black;
+
+    float: right;
+    list-style-type: none;
+    font-family: inherit;
+    transform: rotate(-30deg);
+    letter-spacing: 1.5px;
+    position: relative;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+
+
+
+
 }
 
-#herecafe
-{
-  bottom: 50px;
-right: 90px;  
+#herekiosk {
+    bottom: 50px;
+    right: 110px;
+
+}
+
+#herecafe {
+    bottom: 50px;
+    right: 90px;
 }
 
 /*#herekiosk {

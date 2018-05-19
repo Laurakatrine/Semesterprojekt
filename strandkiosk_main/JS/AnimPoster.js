@@ -33,6 +33,7 @@ function init() {
 }
 
 function Opened() {
+    
     //Background
     var bgSunrise = new createjs.Shape(new createjs.Graphics().beginLinearGradientFill(["#ecd6b5", "#f0ae49"], [0, 1], 0, 20, 0, 400).drawRect(0, 0, 1000, 300));
 
