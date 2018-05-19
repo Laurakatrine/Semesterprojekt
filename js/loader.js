@@ -11,6 +11,11 @@ $(document).ready(function () {
 });
 
 function loadMainMenu() {
+            if (pageLoaded == "Strandkioskerne") {
+        $("center > canvas").remove();
+        $("center >").append("<canvas id='canvas' width='1000' height='300' style='border: none'></canvas>");
+    }
+    
     $(".content_sub > div").remove();
     $(".content_master").remove();
     $(".submenu_master").load("navbar_simple.html");
@@ -19,6 +24,10 @@ function loadMainMenu() {
 }
 
 function loadMainContact() {
+        if (pageLoaded == "Strandkioskerne") {
+        $("center > canvas").remove();
+    } 
+    
     $(".content_sub > div").remove();
     $(".navbar > ").remove();
     $(".content_master").remove();

@@ -757,7 +757,7 @@ a {
     background: white;
     padding: 10px;
     width: 250px;
-    margin: 0 auto;
+    margin: 2em auto;
     position: relative;
     top: 4.5em;
     transform: translateY(-65%);
