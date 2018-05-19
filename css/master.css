@@ -287,8 +287,6 @@ a {
     display: flex;
     width: 90%;
     position: relative;
-    right: 15px;
-
 }
 
 .column {
@@ -503,12 +501,12 @@ a {
 }
 
 .left-contact {
-    width: 49.6%;
+    width: 47%;
     float: left;
 }
 
 .right-contact {
-    width: 49.6%;
+    width: 47%;
     float: right;
     padding-bottom: 0.5%;
 }
@@ -535,20 +533,29 @@ a {
 
 #åbningstider {
     font-family: 'Roboto', sans-serif;
+    padding-top: 15%;
+    padding-left: 2%;
 }
-
-#åbningstider h3 {}
 
 #åbningstider p {
     line-height: 150%;
 }
+
+#åbningstiderKiosk {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30%;
+}
+
+#åbningstiderKiosk p {
+    line-height: 150%;
+}
+
 
 /* KONTAKTFORMULAR START*/
 
 #contact fieldset {
     border: none;
 }
-
 
 #contact textarea {
     height: 30%;
@@ -568,11 +575,9 @@ a {
     padding: 2%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-
     background: #F5ECCE;
     border: none;
 }
-
 
 #contact button {
 
@@ -580,11 +585,10 @@ a {
     background: #F5DA81;
     padding: 1% 2%;
     color: #585858;
-
-
 }
 
 /* KONTAKTFORMULAR SLUT */
+
 
 /* BESTILLING SEKTION START */
 
@@ -599,7 +603,6 @@ a {
     width: 20em;
 }
 
-
 /*hvis det her kører, bliver mappet vist udenfor kontekst*/
 
 /*#google {
@@ -613,17 +616,6 @@ a {
     position: relative;
 
 }
-
-/* den her gør intet, der er ingen class button i bestilling
-.button {
-    color: black;
-    border-radius: 50%;
-    position: relative;
-    width: 5em;
-    height: 5em;
-
-}
-*/
 
 .bestilling {
     position: relative;
@@ -757,7 +749,7 @@ a {
     background: white;
     padding: 10px;
     width: 250px;
-    margin: 0 auto;
+    margin: 3% auto;
     position: relative;
     top: 4.5em;
     transform: translateY(-65%);
@@ -823,6 +815,7 @@ a {
 
 /* BESTILLING SEKTION STOP */
 
+
 /* VIDEO_SPORTS SEKTION START */
 
 .video_container iframe {
@@ -831,11 +824,12 @@ a {
 
 /* VIDEO_SPORTS SEKTION STOP */
 
+
 /* IDRÆTSCENTERET SEKTION START */
 
 .idrætscenteret {
     font-family: 'Roboto';
-    padding-left: 17.5%;
+    padding-left: 17%;
     width: 100%;
     margin: auto;
 }
@@ -859,7 +853,6 @@ p {
 .popupMap {
     width: 100%;
     margin: auto;
-
 }
 
 .popupMap img {
@@ -918,13 +911,15 @@ p {
 }
 
 .left {
-    width: 50%;
+    width: 40%;
+    margin-right: 4.5%;
 }
 
 .right {
-    width: 45%;
+    width: 49%;
     float: right;
 }
+
 
 /* Clear floats after the columns */
 
@@ -945,14 +940,23 @@ p {
 
 /* IDRÆTSCENTERET SEKTION STOP */
 
-/* NYHEDER START */
 
 /* NYHEDER START */
 
 #nyheder {
-    width: 75%;
-    /border-style: solid;
+    width: 80%;
+}
 
+#nyhederKiosk{
+    position: relative;
+    top: -25px;
+    width: 80%;
+    margin-left: 16.8em;
+}
+
+#nyhederKiosk .nyhed-billed {
+    width: 100%;
+    cursor: pointer;
 }
 
 #nyheder .nyhed-billed {
@@ -961,30 +965,19 @@ p {
 }
 
 #nyheder h3 {
-    margin-left: 5%;
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
 }
-
-#content {
-    /border-top: solid;
-}
-
 
 #content .nyhed_dato {
 
     color: gray;
     font-family: 'Roboto', sans-serif;
-
-
-
-
+    margin-right: 5%;
 }
-
 
 #content .nyhed-skrift {
     font-family: 'Roboto', sans-serif;
-    margin-left: 5%;
     margin-right: 5%;
 }
 
@@ -995,7 +988,6 @@ p {
 
 #content .nyhed-energidrik {
     font-family: 'Roboto', sans-serif;
-    margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 2%;
 }
@@ -1006,13 +998,11 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-
 }
 
+/* NYHEDER SLUT */
 
 
-/* NYHEDER SLUT /*
 /*ARRANGEMENTER */
 
 .arrangementer_div {
@@ -1034,8 +1024,10 @@ p {
 
 .left_Arrangementer {
     position: relative;
-    width: 45%;
+    width: 40%;
     line-height: 160%;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 .right_Arrangementer {
