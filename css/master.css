@@ -100,7 +100,6 @@ img.logo {
 
 /* NEWSBAR SECTION STOP */
 
-
 /* TITEL-FOOTER SECTION START */
 
 #overskrift {
@@ -151,7 +150,6 @@ a {
 }
 
 /* TITEL-FOOTER SECTION STOP */
-
 
 /* STYLE SECTION START*/
 
@@ -304,7 +302,6 @@ a {
 
 /* STYLE SECTION STOP */
 
-
 /* SLIDESHOW SECTION START */
 
 * {
@@ -449,7 +446,6 @@ a {
 
 /* SLIDESHOW SECTION STOP */
 
-
 /* KONTAKT SECTION START */
 
 /* div around entire contact element */
@@ -554,7 +550,6 @@ a {
 
 /* KONTAKTFORMULAR SLUT */
 
-
 /* BESTILLING SEKTION START */
 
 #facebook {
@@ -573,7 +568,7 @@ a {
     position: relative;
 }
 
-#google_ice_kontakt{
+#google_ice_kontakt {
     margin-top: 1.5em;
 }
 
@@ -776,7 +771,6 @@ a {
 
 /* BESTILLING SEKTION STOP */
 
-
 /* VIDEO_SPORTS SEKTION START */
 
 .video_container iframe {
@@ -784,7 +778,6 @@ a {
 }
 
 /* VIDEO_SPORTS SEKTION STOP */
-
 
 /* IDRÆTSCENTERET SEKTION START */
 
@@ -900,14 +893,13 @@ p {
 
 /* IDRÆTSCENTERET SEKTION STOP */
 
-
 /* NYHEDER START */
 
 #nyheder {
     width: 80%;
 }
 
-#nyhederKiosk{
+#nyhederKiosk {
     position: relative;
     top: -25px;
     width: 80%;
@@ -959,7 +951,6 @@ p {
 }
 
 /* NYHEDER SLUT */
-
 
 /*ARRANGEMENTER */
 
@@ -1046,7 +1037,6 @@ p {
 
 /*POPUP IMG ARRANGEMENTER SLUT*/
 
-
 /* Clear floats after the columns */
 
 .row:after {
@@ -1074,7 +1064,6 @@ p {
 }
 
 /* ARRANGEMENTER SLUT */
-
 
 /* NAVBAR START */
 
@@ -1184,7 +1173,6 @@ p {
 
 /* SOCIAL MEDIA STOP */
 
-
 .here {
     background-color: rgba(245, 245, 220, 0.8);
     color: black;
@@ -1206,4 +1194,8 @@ p {
 #herecafe {
     bottom: 50px;
     right: 90px;
+}
+
+#strandkiosk_tilbud {
+    margin: 0 auto 10px auto;
 }
