@@ -3,18 +3,27 @@
 var pageLoaded = $(document).attr("title");
 
 $(document).ready(function () {
+
+    if (pageLoaded == "Sportscaféen") {
     $(".header").load("news.html");
     $("footer").load("titel-Footer.html");
     $(".submenu_master").load("navbar_simple.html");
     $(".navbar").load("slideshow.html");
     $(".content_master").load("frontPage_content.html");
+    }
+    else if (pageLoaded == "Strandkioskerne") {
+            $(".header").load("news.html");
+    $("footer").load("titel-Footer.html");
+    $(".submenu_master").load("navbar_simple.html");
+    $(".content_master").load("frontPage_content.html");
+    }
+
 });
 
 function loadMainMenu() {
     if (pageLoaded == "Strandkioskerne") {
         $("center > canvas").remove();
-    }
-    else if (pageLoaded == "Strandkioskerne_Menu") {
+    } else if (pageLoaded == "Strandkioskerne_Menu") {
         $(".navbar").load("slideshow.html");
     }
 
