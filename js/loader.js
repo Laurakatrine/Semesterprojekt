@@ -13,9 +13,9 @@ $(document).ready(function () {
 function loadMainMenu() {
     if (pageLoaded == "Strandkioskerne") {
         $("center > canvas").remove();
-        if (pageLoaded == "Strandkioskerne_Menu") {
-            $("submenu_master center").load("slideshow.html");
-        }
+    }
+    else if (pageLoaded == "Strandkioskerne_Menu") {
+        $(".navbar").load("slideshow.html");
     }
 
     $(".content_sub > div").remove();
