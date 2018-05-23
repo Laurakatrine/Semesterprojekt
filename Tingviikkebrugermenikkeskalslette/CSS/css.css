@@ -1,0 +1,225 @@
+footer {
+    position: absolute;
+    height: auto;
+    top: 27em;
+}
+
+#facebook {
+    float: right;
+    position: relative;
+    top: 20em;
+}
+
+#google {
+    float: left;
+    position: relative;
+    top: 20em;
+}
+
+#google_ice {
+    top: 20em;
+    position: relative;
+}
+
+.button {
+    color: black;
+    border-radius: 50%;
+    position: relative;
+    width: 5em;
+    height: 5em;
+
+}
+
+.bestilling {
+    position: relative;
+    top: 20em;
+    background-color: beige;
+    width: 100%;
+}
+
+.plus {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: right;
+    right: 20em;
+    display: inline-block;
+}
+
+.minus {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    float: right;
+    right: 40em;
+    display: inline-block;
+}
+
+#title_b {
+    position: relative;
+    bottom: 8em;
+    margin: auto;
+    text-align: center;
+    color: darkred;
+    font-size: 40px;
+    background-color: orangered;
+    width: 100%;
+}
+
+#myNumber1 {
+    float: right;
+    position: relative;
+    right: 22em;
+    display: inline-block;
+}
+
+#myNumber2 {
+    float: right;
+    position: relative;
+    right: 22em;
+    display: inline-block;
+}
+
+#myNumber3 {
+    float: right;
+    position: relative;
+    right: 22em;
+    display: inline-block;
+}
+
+.foodName {
+    box-sizing: content-box;
+    position: relative;
+    left: 5em;
+    display: inline;
+    font-size: 20px;
+    bottom: 1px;
+}
+
+
+/* PROTOTYPE START */
+/* Outer */
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* Inner */
+
+.popup-inner {
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    background: #fff;
+}
+
+/* Close Button */
+
+.popup-close {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: ease 0.25s all;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    border-radius: 1000px;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Sans-Serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100%;
+    color: #fff;
+}
+
+.popup-close:hover {
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform: translate(50%, -50%) rotate(180deg);
+    background: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+#holder {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    background: white;
+    padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 4.5em;
+    transform: translateY(-65%);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.btn {
+    background: #3D4C53;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.btnTwo {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-top: -100px;
+    padding-top: 2px;
+    background: #26A69A;
+    left: -250px;
+    transition: .3s;
+}
+
+.btnText {
+    color: white;
+    transition: .3s;
+}
+
+.btnText2 {
+    margin-top: 63px;
+    margin-right: -130px;
+    color: #FFF;
+}
+
+.btn:hover .btnTwo {
+    /*When hovering over .button change .btnTwo*/
+    left: -130px;
+}
+
+.btn:hover .btnText {
+    /*When hovering over .button change .btnText*/
+    margin-left: 65px;
+}
+
+.btn:active {
+    /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+#order_list {
+    padding: 5em;
+}

@@ -51,7 +51,7 @@
 <body>
 
     <div id="order_list">
-        <p class="foodName" id="foodName1" value="Frikadelle Sandwich">Frikadelle Sandwich</p>
+        <p class="foodName" id="foodName1" value="Frikadelle Sandwich">Frikadelle sandwich</p>
         <button onclick="increaseNumber1()" class="plus" type="button">+</button>
         <button onclick="decreaseNumber1()" class="minus" type="button">-</button>
         <input type="number" id="myNumber1" value="0" min="0">
@@ -63,7 +63,7 @@
         <input type="number" id="myNumber2" value="0" min="0">
         <br/>
         <br/>
-        <p class="foodName" id="foodName3" value="Laksesandwich">Laksesandwich</p>
+        <p class="foodName" id="foodName3" value="Laksesandwich">Lakse sandwich</p>
         <button onclick="increaseNumber3()" class="plus" type="button">+</button>
         <button onclick="decreaseNumber3()" class="minus" type="button">-</button>
         <input type="number" id="myNumber3" value="0" min="0">
@@ -85,13 +85,20 @@
                 <textarea readonly type="text" id="basket" name="købs_Kurv" placeholder="Din bestillingsoversigt"></textarea>
                 <label for="fnavn">Navn</label>
                 <input type="text" id="fnavn" name="fulde_Navn" placeholder="Dit navn..">
-
+                
                 <label for="mobil_Number">Telefonnummer</label>
                 <br>
                 <input type="number" id="mobil_Number" name="mobil_Nummer" min="0" max="99999999" placeholder="Dit telefonnummer..">
+                <br><br>
+                
+                <label for="date"> Dato & tid</label>
+                <br>
+                <input type="date" id="date" placeholder="dd/mm/yy">
 
+                <input type="time" id="time" placeholder="Tidspunkt">
+                <br>
 
-                <label for="subject">                    <br>Kommentarfelt</label>
+                <label for="subject"> <br> Kommentarfelt</label>
                 <textarea id="subject" name="kommentar" placeholder="Skriv f.eks. hvis du har tilføjelser til din ordre, eller ønsker at give besked til personalet om noget andet.." style="height:200px"></textarea>
 
                 <input type="submit" value="Bestil">
@@ -252,6 +259,18 @@
 
         if (z.length < 8 || z.length > 8) {
             alert("Indtast venligst et gyldigt nummer");
+            return false;
+        }
+        
+        var d = document.forms["orderForm"]["date"].value;
+        if(d == ""){
+            alert("Vælg et tidspunkt");
+            return false;
+        }
+        
+        var t = document.forms["orderForm"]["time"].value;
+        if (t == ""){
+            alert("Angiv et tidspunkt")
             return false;
         }
     }
